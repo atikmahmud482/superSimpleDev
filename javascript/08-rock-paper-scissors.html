@@ -27,6 +27,15 @@
       Scissors
     </button>
 
+    <button
+      onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0
+    ">
+      Reset Score
+    </button>
+
     <script>
       const score = {
         wins: 0,
@@ -74,7 +83,9 @@
         }
 
         alert(
-          ` You picked ${playerMove}. Computer picked ${computerMove}. ${result}`
+          `You picked ${playerMove}. Computer picked ${computerMove}. ${result}
+Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}
+          `
         );
       }
 
