@@ -20,10 +20,17 @@
 
       const product2 = {
         name: "shirt",
+        ["delivery-time"]: "1 day",
       };
       console.log(product2);
       console.log(product2.name);
       console.log(product2["name"]);
+      console.log(product2["delivery-time"]);
+      /* 
+      Which one should we use?
+      -use dot notation by default
+      -for properties that don't work, use bracket notation.
+      */
     </script>
   </body>
 </html>
