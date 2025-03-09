@@ -43,6 +43,8 @@
         ties: 0,
       };
 
+      console.log(JSON.parse(localStorage.getItem("score")));
+
       function playGame(playerMove) {
         const computerMove = pickComputerMove();
 
@@ -81,6 +83,8 @@
         } else if (result === "Tie.") {
           score.ties += 1;
         }
+
+        localStorage.setItem("score", JSON.stringify(score));
 
         alert(
           `You picked ${playerMove}. Computer picked ${computerMove}. ${result}
