@@ -35,7 +35,7 @@
       // console.log(product2.name);
       // console.log(product2["name"]);
       // console.log(product2["delivery-time"]);
-      /* 
+      /*
       Which one should we use?
       -use dot notation by default
       -for properties that don't work, use bracket notation.
@@ -75,6 +75,18 @@
       const { message, price } = object4; //distracting object
       console.log(message);
       console.log(price);
+
+      const object5 = {
+        message: message, //shorthand method
+        // method: function function1() {
+        //   console.log(method)
+        // }
+        method() {
+          console.log("method"); //shorthand method
+        },
+      };
+      console.log(object5);
+      object5.method();
     </script>
   </body>
 </html>
