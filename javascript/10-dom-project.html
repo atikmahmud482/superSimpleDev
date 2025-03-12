@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>dom project</title>
     <style>
+      .body {
+        font-family: Arial;
+      }
+
       .subscribe-button {
         border: none;
         background-color: black;
@@ -17,10 +21,25 @@
         font-weight: bold;
         border-radius: 50px;
         cursor: pointer;
+        margin-bottom: 20px;
       }
+
       .is-subscribed {
         background-color: rgb(240, 240, 240);
         color: black;
+      }
+
+      .cost-input {
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      .calculate {
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 15px;
+        padding: 12px 15px;
       }
     </style>
   </head>
@@ -38,14 +57,15 @@
     <p>Amazon Shipping Calculator</p>
     <input
       placeholder="Cost of Order"
-      class="js-cost-input"
+      class="js-cost-input cost-input"
       onkeydown="
     handleCostKeydown(event)
     " />
     <button
       onclick="
     calculateTotal()
-    ">
+   "
+      class="calculate">
       Calculate
     </button>
     <p class="js-total-cost"></p>
