@@ -25,7 +25,6 @@ function renderTodoList() {
     '>Delete</button> </p>`;
     todoListHTML += html;
   }
-  console.log(todoListHTML);
 
   document.querySelector(".js-todo-list").innerHTML = todoListHTML;
 }
@@ -43,7 +42,6 @@ function addTodo() {
     name,
     dueDate,
   });
-  console.log(todoList);
 
   inputElement.value = "";
 
