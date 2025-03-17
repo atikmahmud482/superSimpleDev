@@ -24,11 +24,23 @@
 
       const object1 = {
         num: 2,
-        fun: function greeting() {
+        fun: function () {
           console.log("hello3");
         },
       };
       object1.fun();
+
+      function display(param) {
+        console.log(param);
+      }
+      display(2);
+
+      function run(param) {
+        param();
+      }
+      run(function () {
+        console.log("hello4");
+      });
     </script>
   </body>
 </html>
