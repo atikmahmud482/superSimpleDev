@@ -4,20 +4,19 @@ let score = JSON.parse(localStorage.getItem("score")) || {
   ties: 0,
 };
 
-function autoPlay() {
-  let isAutoPlaying = false;
-  let intervalId;
+let isAutoPlaying = false;
+let intervalId;
 
-  function autoPlay() {
-    if (!isAutoPlaying) {
-      intervalId = setInterval(function () {
-        const playerMove = pickComputerMove();
-        playGame(playerMove);
-      }, 1000);
-      isAutoPlaying = true;
-    } else {
-      clearInterval(intervalId);
-    }
+function autoPlay() {
+  if (!isAutoPlaying) {
+    intervalId = setInterval(function () {
+      const playerMove = pickComputerMove();
+      playGame(playerMove);
+    }, 1000);
+    isAutoPlaying = true;
+  } else {
+    clearInterval(intervalId);
+    isAutoPlaying = false;
   }
 }
 
@@ -27,6 +26,7 @@ function playGame(playerMove) {
 
   if (playerMove === computerMove) {
     result = "Tie.";
+    score.ties += 1;
   } else if (
     (playerMove === "rock" && computerMove === "scissors") ||
     (playerMove === "paper" && computerMove === "rock") ||
@@ -38,8 +38,6 @@ function playGame(playerMove) {
     result = "You lose.";
     score.losses += 1;
   }
-
-  if (result === "Tie.") score.ties += 1;
 
   localStorage.setItem("score", JSON.stringify(score));
 
