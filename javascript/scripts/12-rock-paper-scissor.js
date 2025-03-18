@@ -5,10 +5,20 @@ let score = JSON.parse(localStorage.getItem("score")) || {
 };
 
 function autoPlay() {
-  setInterval(function () {
-    const playerMove = pickComputerMove();
-    playGame(playerMove);
-  }, 1000);
+  let isAutoPlaying = false;
+  let intervalId;
+
+  function autoPlay() {
+    if (!isAutoPlaying) {
+      intervalId = setInterval(function () {
+        const playerMove = pickComputerMove();
+        playGame(playerMove);
+      }, 1000);
+      isAutoPlaying = true;
+    } else {
+      clearInterval(intervalId);
+    }
+  }
 }
 
 function playGame(playerMove) {
