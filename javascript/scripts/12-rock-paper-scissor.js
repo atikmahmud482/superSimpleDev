@@ -10,18 +10,34 @@ let intervalId;
 /* const autoPlay = () => {
 
 } */
+
+document.querySelector(".js-rock-button").addEventListener("click", () => {
+  playGame("rock");
+});
+
+document.querySelector(".js-paper-button").addEventListener("click", () => {
+  playGame("paper");
+});
+
 function autoPlay() {
+  const autoPlayBtn = document.querySelector("button[onclick='autoPlay()']");
   if (!isAutoPlaying) {
     intervalId = setInterval(() => {
       const playerMove = pickComputerMove();
       playGame(playerMove);
     }, 1000);
     isAutoPlaying = true;
+    autoPlayBtn.innerText = "Stop Auto Play";
   } else {
     clearInterval(intervalId);
     isAutoPlaying = false;
+    autoPlayBtn.innerText = "Auto Play";
   }
 }
+
+document.querySelector(".js-scissor-button").addEventListener("click", () => {
+  playGame("scissor");
+});
 
 function playGame(playerMove) {
   const computerMove = pickComputerMove();
@@ -68,7 +84,12 @@ function resetScore() {
   score = { wins: 0, losses: 0, ties: 0 };
   localStorage.removeItem("score");
   updateScoreDisplay();
-  document.getElementById("result").innerText = "Score reset!";
+
+  const resultEl = document.getElementById("result");
+  resultEl.innerText = "Score reset!";
+  setTimeout(() => {
+    resultEl.innerText = "";
+  }, 2000);
 }
 
 updateScoreDisplay();
