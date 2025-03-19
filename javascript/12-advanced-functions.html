@@ -55,16 +55,15 @@
 
       // console.log("next line 2");
 
-      ["make dinner", "wash dishes", "watch youtube"].forEach(function (
-        value,
-        index
-      ) {
-        if (value === "wash dishes") {
-          return;
-        }
+      ["make dinner", "wash dishes", "watch youtube"].forEach(
+        (value, index) => {
+          if (value === "wash dishes") {
+            return;
+          }
 
-        console.log(value, index);
-      });
+          console.log(value, index);
+        }
+      );
 
       const regularFunction = function (param, param2) {
         console.log("hello");
