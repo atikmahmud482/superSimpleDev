@@ -26,6 +26,15 @@ const products = [
     },
     priceCents: 7990,
   },
+  {
+    image: "images/products/black-2-slot-toaster.jpg",
+    name: " 2 Slot Toaster-Black",
+    rating: {
+      stars: 5,
+      count: 2197,
+    },
+    priceCents: 1899,
+  },
 ];
 
 let productsHTML = "";
@@ -52,7 +61,9 @@ products.forEach((product) => {
             }</div>
           </div>
 
-          <div class="product-price">$${product.priceCents}}</div>
+          <div class="product-price">$${(product.priceCents / 100).toFixed(
+            2
+          )}</div>
 
           <div class="product-quantity-container">
             <select>
@@ -76,10 +87,16 @@ products.forEach((product) => {
             Added
           </div>
 
-          <button class="add-to-cart-button button-primary">Add to Cart</button>
+          <button class="add-to-cart-button button-primary js-add-to-card">Add to Cart</button>
         </div>
     `;
 });
-console.log(productsHTML);
+// console.log(productsHTML);
 
 document.querySelector(".js-products-grid").innerHTML = productsHTML;
+
+document.querySelectorAll(".js-add-to-card").forEach((button) => {
+  button.addEventListener("click", () => {
+    console.log(" add a product");
+  });
+});
