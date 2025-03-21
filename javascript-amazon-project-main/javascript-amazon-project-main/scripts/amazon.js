@@ -1,1 +1,5 @@
-console.log("hello");
+const products = [
+  {
+    image: "images/products/athletic-cotton-socks-6-pairs.jpg",
+  },
+];
