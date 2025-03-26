@@ -9,7 +9,7 @@ hello();
 
 const today = dayjs();
 const deliveryDate = today.add(7, " days");
-console.log(deliveryDate.format("dddd, MMMM D"));
+// console.log(deliveryDate.format("dddd, MMMM D"));
 
 let cartSummaryHTML = "";
 
@@ -27,15 +27,15 @@ cart.forEach((cartItem) => {
 
   let deliveryOption;
 
-  deliveryOption.forEach(option) => {
-    if(option.id === deliveryOptionId){
+  deliveryOptions.forEach((option) => {
+    if (option.id === deliveryOptionId) {
       deliveryOption = option;
     }
-  }
+  });
 
   const today = dayjs();
-    const deliveryDate = today.add(deliveryOption.deliveryDays, "days");
-    const dataString = deliveryDate.format("dddd, MMMM D");
+  const deliveryDate = today.add(deliveryOption.deliveryDays, "days");
+  const dataString = deliveryDate.format("dddd, MMMM D");
 
   cartSummaryHTML += `
     <div class="cart-item-container js-cart-item-container-${
