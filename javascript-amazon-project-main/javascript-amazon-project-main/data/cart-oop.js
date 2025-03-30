@@ -57,6 +57,19 @@ const cart = {
 
     this.saveToStorage();
   },
+  updateDeliveryOption(productId, deliveryOptionId) {
+    let matchingItem;
+
+    this.cartItems.forEach((cartItem) => {
+      if (productId === cartItem.productId) {
+        matchingItem = cartItem;
+      }
+    });
+
+    matchingItem.deliveryOptionId = deliveryOptionId;
+
+    this.saveToStorage();
+  },
 };
 
 cart.loadFromStorage();
