@@ -73,3 +73,5 @@ const cart = {
 };
 
 cart.loadFromStorage();
+
+console.log(cart);
