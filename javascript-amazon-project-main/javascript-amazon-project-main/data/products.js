@@ -509,4 +509,7 @@ export const products = [
     priceCents: 2400,
     keywords: ["sweaters", "hoodies", "apparel", "mens"],
   },
-];
+].map((productDetails) => {
+  return new product(productDetails);
+});
+console.log(products);
