@@ -8,9 +8,12 @@ new Promise((resolve) => {
   loadProducts(() => {
     resolve();
   });
-});
-
-loadProducts(() => {
+}).then(() => {
   renderOrderSummary();
   renderPaymentSummary();
 });
+
+/* loadProducts(() => {
+  renderOrderSummary();
+  renderPaymentSummary();
+}); */
