@@ -7,6 +7,9 @@ import { loadCart } from "../data/cart.js";
 
 async function loadPage() {
   console.log("load page");
+
+  await loadProductsFetch();
+
   return "value2";
 }
 loadPage().then((value) => {
