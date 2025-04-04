@@ -5,6 +5,15 @@ import { loadCart } from "../data/cart.js";
 // import "../data/cart-class.js";
 // import "../data/backend-practice.js";
 
+async function loadPage() {
+  console.log("load page");
+  return "value2";
+}
+loadPage().then((value) => {
+  console.log("next stem");
+  console.log(value);
+});
+
 Promise.all([
   loadProductsFetch(),
   new Promise((resolve) => {
