@@ -85,7 +85,7 @@ object3.method();
 export let products = [];
 
 export function loadProductsFetch() {
-  const promise = fetch("https://xcfvxcfg.supersimplebackend.dev/products")
+  const promise = fetch("https://supersimplebackend.dev/products")
     .then((response) => {
       return response.json();
     })
@@ -97,10 +97,10 @@ export function loadProductsFetch() {
         return new Product(productDetails);
       });
       console.log("load products");
-    });
-  /* .catch((error) => {
+    })
+    .catch((error) => {
       console.log("unexpected error. Please try again later.");
-    }); */
+    });
   return promise;
 }
 /* loadProductsFetch().then(() => {
