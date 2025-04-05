@@ -13,8 +13,8 @@ async function loadPage() {
     const value = await new Promise((resolve, reject) => {
       // throw "error1";
       loadCart(() => {
-        reject("error1");
-        // resolve("value3");
+        // reject("error1");
+        resolve("value3");
       });
     });
   } catch (error) {
