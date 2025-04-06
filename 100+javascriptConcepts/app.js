@@ -24,3 +24,8 @@ function higherOrder(fun) {
   fun();
   return function () {};
 }
+
+//callback function
+setTimeout(() => {
+  console.log("5 second in the future");
+}, 5000);
