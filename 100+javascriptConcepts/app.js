@@ -29,3 +29,11 @@ function higherOrder(fun) {
 setTimeout(() => {
   console.log("5 second in the future");
 }, 5000);
+
+async function asyncFun() {
+  try {
+    const result = await Promise;
+  } catch (error) {
+    console.log("error", error);
+  }
+}
