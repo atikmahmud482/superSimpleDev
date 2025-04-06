@@ -8,7 +8,7 @@
 
 // luckyNum = null;
 
-let a = " global";
+/* let a = " global";
 
 function fun() {
   let a = "function";
@@ -18,4 +18,9 @@ function fun() {
     var b = "hoisted";
   }
   fun();
+} */
+
+function higherOrder(fun) {
+  fun();
+  return function () {};
 }
