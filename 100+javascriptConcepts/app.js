@@ -46,3 +46,13 @@ const promise = new Promise((resolve, reject) => {
     reject("failure");
   }
 });
+
+// then and catch
+
+promise
+  .then((success) => {
+    console.log("yey!", success);
+  })
+  .catch((err) => {
+    console.log("oh no!", err);
+  });
