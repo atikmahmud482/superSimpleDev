@@ -37,3 +37,12 @@ async function asyncFun() {
     console.log("error", error);
   }
 }
+
+// reject
+const promise = new Promise((resolve, reject) => {
+  if (greatSuccess) {
+    resolve("success");
+  } else {
+    reject("failure");
+  }
+});
