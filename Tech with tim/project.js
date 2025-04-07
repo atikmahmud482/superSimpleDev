@@ -16,6 +16,12 @@ const SYMBOL_COUNT = {
   C: 6,
   D: 8,
 };
+const SYMBOL_VALUES = {
+  A: 5,
+  B: 4,
+  C: 3,
+  D: 2,
+};
 
 const deposit = () => {
   while (true) {
@@ -53,6 +59,17 @@ const getBet = (balance, lines) => {
   }
 };
 
+const spin = () => {
+  const symbols = [];
+  for (const [symbol, count] of Object.entries(SYMBOL_COUNT)) {
+    for (let i = 0; i < count; i++) {
+      symbols.push(symbol);
+    }
+  }
+  console.log(symbols);
+};
+
+spin();
 let balance = deposit();
 const numberOfLines = getNumberOfLines();
 const bet = getBet(balance, numberOfLines);
