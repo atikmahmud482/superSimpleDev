@@ -66,7 +66,7 @@ const spin = () => {
       symbols.push(symbol);
     }
   }
-  console.log(symbols);
+  const reels = [[], [], []];
 };
 
 spin();
