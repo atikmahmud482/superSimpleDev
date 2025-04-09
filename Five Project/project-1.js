@@ -1,29 +1,33 @@
 const prompt = require("prompt-sync")();
-const name = prompt("what is your name? ");
+
+const name = prompt("What is your name? ");
 console.log("Hello", name, "Welcome to the game!");
 
-const shouldWePlay = prompt("Do you want to play? ");
+const shouldWePlay = prompt("Do you want to play? (yes/no) ");
 
 if (shouldWePlay.toLowerCase() === "yes") {
-  // Game logic goes here
-  const lefOrRight = prompt(
-    "You enter a maze, do you want to go left or right? "
+  const leftOrRight = prompt(
+    "You enter a maze. Do you want to go left or right? "
   );
-  if (lefOrRight === "left") {
-    console.log("You will see the bridge...");
-    const cross = prompt("Do you want to cross the bridge? ");
-    if (cross === "yes") {
+
+  if (leftOrRight.toLowerCase() === "left") {
+    console.log("You see a bridge...");
+
+    const cross = prompt("Do you want to cross the bridge? (yes/no) ");
+    if (cross.toLowerCase() === "yes") {
       console.log(
-        "you cross but the bridge was weak and broke and you fall. you lost..."
+        "You cross, but the bridge was weak and broke. You fall. You lost..."
       );
     } else {
-      console.log("Good choice...you win");
+      console.log("Good choice... You win!");
     }
+  } else if (leftOrRight.toLowerCase() === "right") {
+    console.log("You fall off a cliff... You lost.");
   } else {
-    console.log("you will fall of a cliff...");
+    console.log("Invalid choice. Please choose 'left' or 'right'.");
   }
 } else if (shouldWePlay.toLowerCase() === "no") {
   console.log("Okay, maybe next time!");
 } else {
-  console.log("Please answer with 'yes' or 'no'. ");
+  console.log("Please answer with 'yes' or 'no'.");
 }
