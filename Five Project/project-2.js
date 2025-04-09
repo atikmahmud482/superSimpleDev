@@ -1,25 +1,19 @@
 const prompt = require("prompt-sync")();
 
-let number1;
-while (true) {
-  number1 = parseFloat(prompt("Enter Number 1: "));
-  if (isNaN(number1)) {
-    console.log("Please enter a valid number.");
-  } else {
-    break;
+// Reusable function to get a valid number from the user
+function getValidNumber(label) {
+  while (true) {
+    const input = parseFloat(prompt(`Enter ${label}: `));
+    if (isNaN(input)) {
+      console.log("Please enter a valid number.");
+    } else {
+      return input;
+    }
   }
 }
 
-let number2;
-while (true) {
-  number2 = parseFloat(prompt("Enter Number 2: "));
-  if (isNaN(number2)) {
-    console.log("Please enter a valid number.");
-  } else {
-    break;
-  }
-}
-
+const number1 = getValidNumber("Number 1");
+const number2 = getValidNumber("Number 2");
 const operator = prompt("Enter operator (+, -, *, /): ");
 
 let result;
@@ -52,4 +46,3 @@ switch (operator) {
 if (valid) {
   console.log(`${number1} ${operator} ${number2} = ${result}`);
 }
-console.log("Thank you for using the calculator! Have a great day!");
