@@ -1,3 +1,5 @@
+/* Calculator */
+
 const prompt = require("prompt-sync")();
 
 // Reusable function to get a valid number from the user
