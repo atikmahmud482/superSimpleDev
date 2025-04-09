@@ -1,7 +1,8 @@
 const prompt = require("prompt-sync")();
 
+let number1;
 while (true) {
-  const number1 = parseFloat(prompt("Enter Number 1: "));
+  number1 = parseFloat(prompt("Enter Number 1: "));
   if (isNaN(number1)) {
     console.log("Please enter a valid number.");
   } else {
@@ -9,8 +10,9 @@ while (true) {
   }
 }
 
+let number2;
 while (true) {
-  const number2 = parseFloat(prompt("Enter Number 2: "));
+  number2 = parseFloat(prompt("Enter Number 2: "));
   if (isNaN(number2)) {
     console.log("Please enter a valid number.");
   } else {
@@ -18,7 +20,7 @@ while (true) {
   }
 }
 
-const operator = prompt("Enter Sign: ");
+const operator = prompt("Enter operator (+, -, *, /): ");
 
 let result;
 let valid = true;
@@ -26,19 +28,20 @@ let valid = true;
 switch (operator) {
   case "+":
     result = number1 + number2;
-
     break;
   case "-":
     result = number1 - number2;
-
     break;
   case "*":
     result = number1 * number2;
-
     break;
   case "/":
-    result = number1 / number2;
-
+    if (number2 !== 0) {
+      result = number1 / number2;
+    } else {
+      console.log("Error: Cannot divide by zero.");
+      valid = false;
+    }
     break;
   default:
     console.log("Invalid operator. Please use +, -, * or /.");
@@ -47,5 +50,6 @@ switch (operator) {
 }
 
 if (valid) {
-  console.log(number1, operator, number2, "=", result);
+  console.log(`${number1} ${operator} ${number2} = ${result}`);
 }
+console.log("Thank you for using the calculator! Have a great day!");
