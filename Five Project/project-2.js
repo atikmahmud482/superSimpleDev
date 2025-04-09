@@ -1,7 +1,23 @@
 const prompt = require("prompt-sync")();
 
-const number1 = parseFloat(prompt("Enter Number 1: "));
-const number2 = parseFloat(prompt("Enter Number 2: "));
+while (true) {
+  const number1 = parseFloat(prompt("Enter Number 1: "));
+  if (isNaN(number1)) {
+    console.log("Please enter a valid number.");
+  } else {
+    break;
+  }
+}
+
+while (true) {
+  const number2 = parseFloat(prompt("Enter Number 2: "));
+  if (isNaN(number2)) {
+    console.log("Please enter a valid number.");
+  } else {
+    break;
+  }
+}
+
 const operator = prompt("Enter Sign: ");
 
 let result;
