@@ -12,15 +12,27 @@ function printInfo() {
   console.log("5. Exit");
 }
 
-function addContract() {}
+function addContract() {
+  const name = prompt("Enter the contract name: ");
+  const email = prompt("Enter the contract email: ");
+  const contract = {
+    name: name,
+    email: email,
+  };
+  contracts.push(contract);
+}
 
 function deleteContract() {}
 
 function searchContract() {}
 
-function listContracts(contracts) {}
+function listContracts(contracts) {
+  console.log(contracts);
+}
 
 printInfo();
+
+const contracts = [];
 
 let keepGoing = true;
 while (keepGoing) {
