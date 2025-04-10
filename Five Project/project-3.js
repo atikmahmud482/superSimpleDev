@@ -20,6 +20,7 @@ function addContract() {
     email: email,
   };
   contracts.push(contract);
+  console.log("Added!");
 }
 
 function deleteContract() {}
@@ -28,6 +29,7 @@ function searchContract() {}
 
 function listContracts(contracts) {
   for (let contract of contracts) {
+    console.log(contract.name, contract.email);
   }
 }
 
