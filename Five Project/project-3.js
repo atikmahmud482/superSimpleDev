@@ -27,7 +27,8 @@ function deleteContract() {}
 function searchContract() {}
 
 function listContracts(contracts) {
-  console.log(contracts);
+  for (let contract of contracts) {
+  }
 }
 
 printInfo();
@@ -63,3 +64,11 @@ while (keepGoing) {
       break;
   }
 }
+
+// for loop
+/* 
+const arr = ["apple", "banana", "orange"]
+ for(let i = 0; i < 10; i++) {
+ console.log(i);
+ }
+*/
