@@ -23,7 +23,12 @@ function addContract() {
   console.log("Added!");
 }
 
-function deleteContract() {}
+function deleteContract() {
+  for (let i = 0; i < contracts.length; i++) {
+    const contract = contracts[i];
+    console.log((i + 1).toString() + ":", contract.name);
+  }
+}
 
 function searchContract() {}
 
