@@ -24,10 +24,18 @@ function addContract() {
 }
 
 function deleteContract() {
+  console.log("Contact IDs: ");
   for (let i = 0; i < contracts.length; i++) {
     const contract = contracts[i];
     console.log((i + 1).toString() + ":", contract.name);
   }
+  const number = parseInt(prompt("Enter the contract ID: "));
+  if (isNaN(number) || number > contracts.length) {
+    console.log("Invalid.");
+    return;
+  }
+  contracts.splice(number - 1, 1);
+  console.log("Removed.");
 }
 
 function searchContract() {}
