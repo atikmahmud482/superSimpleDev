@@ -47,7 +47,7 @@ while (keepGoing) {
       break;
 
     case "3":
-      listContracts();
+      listContracts(contracts);
       break;
 
     case "4":
