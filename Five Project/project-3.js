@@ -16,7 +16,7 @@ function addContract() {}
 
 function deleteContract() {}
 
-function setContract() {}
+function searchContract() {}
 
 function listContracts(contracts) {}
 
@@ -27,15 +27,19 @@ while (keepGoing) {
   const number = prompt("Enter and operation 1-5: ");
   switch (number) {
     case "1":
+      addContract();
       break;
 
     case "2":
+      deleteContract();
       break;
 
     case "3":
+      listContracts();
       break;
 
     case "4":
+      searchContract();
       break;
 
     case "5":
