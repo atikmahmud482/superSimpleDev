@@ -12,9 +12,18 @@ function printInfo() {
   console.log("5. Exit");
 }
 
+function addContract() {}
+
+function deleteContract() {}
+
+function setContract() {}
+
+function listContracts(contracts) {}
+
 printInfo();
 
-while (true) {
+let keepGoing = true;
+while (keepGoing) {
   const number = prompt("Enter and operation 1-5: ");
   switch (number) {
     case "1":
@@ -30,6 +39,7 @@ while (true) {
       break;
 
     case "5":
+      keepGoing = false;
       break;
 
     default:
