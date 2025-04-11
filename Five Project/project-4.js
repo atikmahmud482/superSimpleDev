@@ -82,7 +82,9 @@ function checkWin(board, turn) {
         break;
       }
     }
+    if (win) return true;
   }
+  return false;
 }
 
 const board = [
@@ -97,9 +99,15 @@ let turnCount = 0;
 printBoard(board);
 console.log();
 while (turnCount < 9) {
+  console.log(turn, "player turn.");
   makeMove(turn, board);
   printBoard(board);
   console.log();
+  const win = checkWin(board, turn);
+  if (win) {
+    console.log(turn, "has won!");
+    break;
+  }
 
   turn = turn === "X" ? "O" : "X";
   turnCount++;
