@@ -38,7 +38,16 @@ function deleteContract() {
   console.log("Removed.");
 }
 
-function searchContract() {}
+function searchContract() {
+  const searchString = prompt("Search: ").toLowerCase();
+  const results = [];
+
+  for (let contract of contracts) {
+    if (contract.name.toLowerCase().includes(searchString))
+      results.push(contract);
+  }
+  listContracts(results);
+}
 
 function listContracts(contracts) {
   for (let contract of contracts) {
