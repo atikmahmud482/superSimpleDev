@@ -95,6 +95,7 @@ const board = [
 
 let turn = "X";
 let turnCount = 0;
+let won;
 
 printBoard(board);
 console.log();
@@ -112,3 +113,5 @@ while (turnCount < 9) {
   turn = turn === "X" ? "O" : "X";
   turnCount++;
 }
+
+if (turnCount === 9) console.log("Tie game!");
