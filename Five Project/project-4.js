@@ -30,7 +30,7 @@ function printBoard(board) {
   }
 }
 
-function checkWin(board) {
+function checkWin(board, turn) {
   const lines = [
     [
       [0, 0],
@@ -73,6 +73,16 @@ function checkWin(board) {
       [2, 0],
     ], // Diagonal /
   ];
+  for (let line of lines) {
+    let win = true;
+    for (let pos of line) {
+      const [row, col] = pos;
+      if (board[row][col] !== turn) {
+        win = false;
+        break;
+      }
+    }
+  }
 }
 
 const board = [
