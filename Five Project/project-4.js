@@ -4,8 +4,8 @@ const prompt = require("prompt-sync")();
 
 function makeMove(turn, board) {
   while (true) {
-    const row = parseInt(prompt("Enter row (1-3): "));
-    const col = parseInt(prompt("Enter col (1-3): "));
+    const row = parseInt(prompt(`Player ${turn}, enter row (1-3): `));
+    const col = parseInt(prompt(`Player ${turn}, enter col (1-3): `));
 
     if (isNaN(row) || row < 1 || row > 3) console.log("Invalid row");
     else if (isNaN(col) || col < 1 || col > 3) console.log("Invalid col");
@@ -23,7 +23,12 @@ const board = [
   [" ", " ", " "],
 ];
 
-makeMove("X", board);
-console.log(board);
-makeMove("O", board);
-console.log(board);
+let turn = "X";
+let turnCount = 0;
+
+while (turnCount < 9) {
+  makeMove(turn, board);
+  console.log(board);
+  turn = turn === "X" ? "O" : "X";
+  turnCount++;
+}
