@@ -12,5 +12,11 @@ function loadQuestion() {
   }
 }
 
+function getRandomQuestions(questions, numQuestions) {
+  if (numQuestions > questions.length) {
+    numQuestions = questions.length;
+  }
+}
+
 const questions = loadQuestion();
 console.log(questions);
