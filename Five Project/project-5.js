@@ -38,6 +38,22 @@ function askQuestion(question) {
   return choiceValue === question.answer;
 }
 
-const numQuestions = prompt("Enter the number of questions: ");
+const numQuestions = parseInt(prompt("Enter the number of questions: "));
 const questions = loadQuestion();
 const randomQuestions = getRandomQuestions(questions, numQuestions);
+
+let correct = 0;
+const startTime = Date.now();
+
+for (let question of randomQuestions) {
+  const isCorrect = askQuestion(question);
+  console.log();
+  if (isCorrect) correct++;
+}
+
+const totalTime = Date.now() - startTime;
+const score = (correct / randomQuestions.length) * 100;
+
+console.log("Correct: ", correct);
+console.log("Time: ", totalTime + "ms");
+console.log("Score: ", score.toFixed(2) + "%");
