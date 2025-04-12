@@ -1,5 +1,6 @@
 const prompt = require("prompt-sync");
 const fs = require("fs");
+const { get } = require("http");
 
 function loadQuestion() {
   try {
@@ -16,7 +17,13 @@ function getRandomQuestions(questions, numQuestions) {
   if (numQuestions > questions.length) {
     numQuestions = questions.length;
   }
+
+  const shuffled = questions.sort(() => {
+    return 0.5 - Math.random();
+  });
+  return shuffled.slice(0, numQuestions);
 }
 
 const questions = loadQuestion();
-console.log(questions);
+const randomQuestions = getRandomQuestions(questions, 1);
+console.log(randomQuestions);
