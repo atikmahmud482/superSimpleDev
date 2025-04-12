@@ -24,6 +24,14 @@ function getRandomQuestions(questions, numQuestions) {
   return shuffled.slice(0, numQuestions);
 }
 
+function askQuestion(question) {
+  console.log(question.question);
+  for (let i = 0; i < question.options.length; i++) {
+    const option = question.options[i];
+    console.log(`${i + 1}. ${option}`);
+  }
+}
+
 const questions = loadQuestion();
 const randomQuestions = getRandomQuestions(questions, 1);
-console.log(randomQuestions);
+askQuestion(randomQuestions[0]);
