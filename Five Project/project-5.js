@@ -30,8 +30,16 @@ function askQuestion(question) {
     const option = question.options[i];
     console.log(`${i + 1}. ${option}`);
   }
+  const choice = parseInt(prompt("Enter the number: "));
+  if (isNaN(choice) || choice < 1 || choice > question.option.options.length) {
+    console.log("Invalid Incorrect choice");
+    return false;
+  }
+  const choiceValue = question.options[choice - 1];
+  return choiceValue === question.answer;
 }
 
 const questions = loadQuestion();
 const randomQuestions = getRandomQuestions(questions, 1);
-askQuestion(randomQuestions[0]);
+const correct = askQuestion(randomQuestions[0]);
+console.log(correct);
