@@ -1,3 +1,5 @@
+//Random Quiz Generator
+
 const prompt = require("prompt-sync")(); // ✅ fixed
 const fs = require("fs");
 
@@ -55,5 +57,5 @@ const totalTime = Date.now() - startTime;
 const score = (correct / randomQuestions.length) * 100;
 
 console.log("Correct: ", correct);
-console.log("Time: ", totalTime + "ms");
+console.log("Time: ", Math.round(totalTime / 1000) + "s");
 console.log("Score: ", score.toFixed(2) + "%");
