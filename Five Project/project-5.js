@@ -1,6 +1,5 @@
-const prompt = require("prompt-sync");
+const prompt = require("prompt-sync")(); // ✅ fixed
 const fs = require("fs");
-const { get } = require("http");
 
 function loadQuestion() {
   try {
@@ -31,7 +30,7 @@ function askQuestion(question) {
     console.log(`${i + 1}. ${option}`);
   }
   const choice = parseInt(prompt("Enter the number: "));
-  if (isNaN(choice) || choice < 1 || choice > question.option.options.length) {
+  if (isNaN(choice) || choice < 1 || choice > question.options.length) {
     console.log("Invalid Incorrect choice");
     return false;
   }
@@ -39,7 +38,6 @@ function askQuestion(question) {
   return choiceValue === question.answer;
 }
 
+const numQuestions = prompt("Enter the number of questions: ");
 const questions = loadQuestion();
-const randomQuestions = getRandomQuestions(questions, 1);
-const correct = askQuestion(randomQuestions[0]);
-console.log(correct);
+const randomQuestions = getRandomQuestions(questions, numQuestions);
