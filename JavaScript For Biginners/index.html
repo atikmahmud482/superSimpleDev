@@ -10,8 +10,8 @@
     <input type="text" id="inp" /> -->
 
     <h1 id="header">Hello</h1>
-    <button style="background-color: red">Red</button>
-    <button style="background-color: green">Green</button>
+    <button onclick="red()">Red</button>
+    <button onclick="green()">Green</button>
     <script>
       /* document.getElementById("header").innerHTML = "Tech With Atik!";
 
@@ -85,6 +85,14 @@
       }
       var x = add(4, 5);
       console.log(x);
+      console.log(add(3, 4));
+
+      function red() {
+        document.getElementById("header").style.color = "red";
+      }
+      function green() {
+        document.getElementById("header").style.color = "green";
+      }
     </script>
 
     <script src="/JavaScript For Biginners/index.js"></script>
