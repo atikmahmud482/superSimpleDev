@@ -110,28 +110,34 @@
       }  */
       // video 7 end
       // video 8 start
+      // function pressed() {
+      //   var text = document.getElementById("inp").value;
+      //   var output = document.getElementById("output");
+
+      //   if (text > 18) {
+      //     output.innerHTML = "You are older than 18!";
+      //   } else if (text == 18) {
+      //     output.innerHTML = "You are 18!";
+      //   } else {
+      //     output.innerHTML = "You are NOT older than 18!";
+      //   }
+      // switch (text) {
+      //   case "red":
+      //     document.getElementById("header").style.color = "red";
+      //     break;
+      //   case "blue":
+      //     document.getElementById("header").style.color = "blue";
+      //     break;
+      //   default:
+      //     document.getElementById("header").style.color = "black";
+      //     break;
+      // }
+      // }
+      //video 8 end
+      // video 9 start
       function pressed() {
         var text = document.getElementById("inp").value;
-        var output = document.getElementById("output");
-
-        if (text > 18) {
-          output.innerHTML = "You are older than 18!";
-        } else if (text == 18) {
-          output.innerHTML = "You are 18!";
-        } else {
-          output.innerHTML = "You are NOT older than 18!";
-        }
-        // switch (text) {
-        //   case "red":
-        //     document.getElementById("header").style.color = "red";
-        //     break;
-        //   case "blue":
-        //     document.getElementById("header").style.color = "blue";
-        //     break;
-        //   default:
-        //     document.getElementById("header").style.color = "black";
-        //     break;
-        // }
+        output.innerHTML = text.toUpperCase();
       }
     </script>
 
