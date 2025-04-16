@@ -174,7 +174,7 @@
       /*  var condition = false;
       do {
         console.log("run!");
-      } while (condition); 
+      } while (condition);
        video 11 end */
       // video 12 start
 
@@ -230,11 +230,31 @@
       // console.log(set1);
       //video end
       //video 15 start
-      var mp = new Map([
+      var mv = new Map([
         ["t", 5],
         ["v", 6],
       ]);
-      console.log(mp.get("t"));
+
+      for (var entry of mv) {
+        console.log(entry[1]);
+      }
+      ////////////////////////
+      var mv = new Map();
+      str = "this is my new string hello";
+      for (var letter of str) {
+        if (mv.has(letter)) {
+          mv.set(letter, mv.get(letter) + 1);
+        } else {
+          mv.set(letter, 1);
+        }
+      }
+      console.log(mv);
+      // mp.set("t", 7);
+      // mp.delete("6");
+      // mp.set(4, "hello");
+      // console.log(mp.get(4));
+      // console.log(mp.get("t"));
+      // console.log(mp.size);
     </script>
 
     <script src="/JavaScript For Biginners/index.js"></script>
