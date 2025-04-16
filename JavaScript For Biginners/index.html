@@ -178,9 +178,23 @@
        video 11 end */
       // video 12 start
 
-      for (let i = 0; i < 10; i++) {
+      /* for (let i = 0; i < 10; i++) {
         console.log(i);
+        if (i == 7) {
+          break;
+        }
+      } */
+
+      function findInArray(arr, value) {
+        for (var i = 0; i < arr.length; i++) {
+          if (arr[i] == value) {
+            return true;
+          }
+        }
+        return false;
       }
+      var arr = [1, 2, 4, 5, 7, "atik", true];
+      console.log(findInArray(arr, 5));
     </script>
 
     <script src="/JavaScript For Biginners/index.js"></script>
