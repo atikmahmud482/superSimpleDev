@@ -32,9 +32,14 @@ console.log(y - x); */
 
 //Type Conversions
 // const x = "345";
-const x = "3445.455fld";
+/* const x = "3445.455fld";
 const y = 3;
 
 console.log(Number(x) + y);
 console.log(parseInt(x) + y);
-console.log(parseFloat(x) + y);
+console.log(parseFloat(x) + y); */
+
+// Comparison Operators
+console.log(undefined === null);
+console.log("1" === 1);
+console.log("1" == 1);
