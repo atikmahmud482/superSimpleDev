@@ -46,9 +46,21 @@ console.log("1" == 1); */
 
 //Logical Operators
 // && || !
-console.log(true && "hello");
+/* console.log(true && "hello");
 console.log(false && "hello");
 console.log(!false && "hello");
 console.log(true || false);
 console.log(true && false);
-console.log("" || false);
+console.log("" || false); */
+
+//Conditionals(if/else if/else)
+/* if (true) {
+  console.log("Hello world!");
+} else if (false) {
+  console.log("first");
+} else {
+  console.log("second");
+} */
+
+const cond = 3 < 5 ? "okay cool" : "no";
+console.log(cond);
