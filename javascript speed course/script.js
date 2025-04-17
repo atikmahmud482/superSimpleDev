@@ -40,6 +40,15 @@ console.log(parseInt(x) + y);
 console.log(parseFloat(x) + y); */
 
 // Comparison Operators
-console.log(undefined === null);
+/* console.log(undefined === null);
 console.log("1" === 1);
-console.log("1" == 1);
+console.log("1" == 1); */
+
+//Logical Operators
+// && || !
+console.log(true && "hello");
+console.log(false && "hello");
+console.log(!false && "hello");
+console.log(true || false);
+console.log(true && false);
+console.log("" || false);
