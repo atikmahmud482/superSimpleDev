@@ -177,7 +177,7 @@ for (const value of myMap.values()) {
  */
 
 // Error Handling
-try {
+/* try {
   riskyFunction();
 } catch (error) {
   console.error("An error occured:", error.massage);
@@ -185,4 +185,19 @@ try {
   console.log("Cleanup code can go here.");
 }
 
-// throw new Error("this is not good!");
+// throw new Error("this is not good!"); */
+
+//function
+function greet(name, age = 24) {
+  console.log(name, age);
+}
+
+const greater = function (name) {
+  console.log(name);
+};
+console.log(greater);
+
+const greatest = (name) => {
+  console.log(name);
+};
+console.log(greatest);
