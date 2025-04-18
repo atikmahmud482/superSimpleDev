@@ -62,5 +62,22 @@ console.log("" || false); */
   console.log("second");
 } */
 
-const cond = 3 < 5 ? "okay cool" : "no";
+/* const cond = 3 < 5 ? "okay cool" : "no";
 console.log(cond);
+ */
+
+//Switch Statement
+
+const value = 4;
+
+switch (value) {
+  case 4:
+    console.log("3 is cool");
+    break;
+  case 3:
+    console.log("4 is cool");
+    break;
+  default:
+    console.log("okay");
+    break;
+}
