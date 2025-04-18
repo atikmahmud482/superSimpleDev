@@ -109,9 +109,25 @@ b.push("hello");
 console.log(a, b); */
 
 //While Loops/Do While
-do {
+/* do {
   console.log("run");
   break;
 } while (true);
 
-while (true) console.log("Hello world");
+// while (true) console.log("Hello world"); */
+
+//for loops
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+  continue;
+}
+
+const arr = [1, 2, 3];
+
+for (let i = 0; i < arr.length; i++) {
+  console.log(arr[i]);
+}
+
+for (let value of arr) {
+  console.log(value);
+}
