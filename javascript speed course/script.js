@@ -133,7 +133,7 @@ for (let value of arr) {
 } */
 
 //Object
-const obj = {
+/* const obj = {
   name: "atik",
   age: 24,
   sayHello: function () {
@@ -145,4 +145,15 @@ const obj = {
 // console.log(Object.keys(obj));
 // for (let key in obj) {
 //   console.log(key);
-// }
+// } */
+
+//sets
+const mySet = new Set();
+mySet.add(1);
+mySet.delete(1);
+mySet.has(1);
+mySet.size;
+
+for (const value of mySet) {
+  console.log(value);
+}
