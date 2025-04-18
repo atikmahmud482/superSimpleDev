@@ -82,7 +82,7 @@ switch (value) {
 } */
 
 // Javascript Array
-const arr = [1, 2, 3, 4, true];
+/* const arr = [1, 2, 3, 4, true];
 const arr2 = new Array(5);
 console.log(arr);
 const arr3 = Array.from("hello");
@@ -96,4 +96,14 @@ console.log(arr3);
 // const arr4 = arr.concat(arr3);
 // const arr4 = arr.slice(1, 3);
 const arr4 = arr.splice(1, 3);
-console.log(arr4);
+console.log(arr4); */
+
+//Array Destructing and Spreed
+const [x, y] = [1, 3];
+console.log(x, y);
+
+const a = [1, 2, 3, 4, 5];
+const b = [...a]; //spreed
+
+b.push("hello");
+console.log(a, b);
