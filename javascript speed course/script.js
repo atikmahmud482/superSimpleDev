@@ -67,8 +67,7 @@ console.log(cond);
  */
 
 //Switch Statement
-
-const value = 4;
+/* const value = 4;
 
 switch (value) {
   case 4:
@@ -80,4 +79,21 @@ switch (value) {
   default:
     console.log("okay");
     break;
-}
+} */
+
+// Javascript Array
+const arr = [1, 2, 3, 4, true];
+const arr2 = new Array(5);
+console.log(arr);
+const arr3 = Array.from("hello");
+console.log(arr3);
+arr3[0] = "y";
+console.log(arr3);
+
+// arr3.push(4);
+// arr3.push;
+// arr3.shift();
+// const arr4 = arr.concat(arr3);
+// const arr4 = arr.slice(1, 3);
+const arr4 = arr.splice(1, 3);
+console.log(arr4);
