@@ -117,7 +117,7 @@ console.log(a, b); */
 // while (true) console.log("Hello world"); */
 
 //for loops
-for (let i = 0; i < 10; i++) {
+/* for (let i = 0; i < 10; i++) {
   console.log(i);
   continue;
 }
@@ -130,4 +130,19 @@ for (let i = 0; i < arr.length; i++) {
 
 for (let value of arr) {
   console.log(value);
-}
+} */
+
+//Object
+const obj = {
+  name: "atik",
+  age: 24,
+  sayHello: function () {
+    return "hello";
+  },
+  career: {},
+};
+// console.log(obj.name);
+// console.log(Object.keys(obj));
+// for (let key in obj) {
+//   console.log(key);
+// }
