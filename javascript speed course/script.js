@@ -159,7 +159,7 @@ for (const value of mySet) {
 } */
 
 //map
-const myMap = new Map();
+/* const myMap = new Map();
 const numberMap = new Map([
   [1, "one"],
   [2, "two"],
@@ -174,3 +174,15 @@ myMap.has(1);
 for (const value of myMap.values()) {
   console.log(value);
 }
+ */
+
+// Error Handling
+try {
+  riskyFunction();
+} catch (error) {
+  console.error("An error occured:", error.massage);
+} finally {
+  console.log("Cleanup code can go here.");
+}
+
+// throw new Error("this is not good!");
