@@ -99,11 +99,19 @@ const arr4 = arr.splice(1, 3);
 console.log(arr4); */
 
 //Array Destructing and Spreed
-const [x, y] = [1, 3];
+/* const [x, y] = [1, 3];
 console.log(x, y);
 
 const a = [1, 2, 3, 4, 5];
 const b = [...a]; //spreed
 
 b.push("hello");
-console.log(a, b);
+console.log(a, b); */
+
+//While Loops/Do While
+do {
+  console.log("run");
+  break;
+} while (true);
+
+while (true) console.log("Hello world");
