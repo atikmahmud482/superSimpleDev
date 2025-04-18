@@ -148,12 +148,29 @@ for (let value of arr) {
 // } */
 
 //sets
-const mySet = new Set();
+/* const mySet = new Set();
 mySet.add(1);
 mySet.delete(1);
 mySet.has(1);
 mySet.size;
 
 for (const value of mySet) {
+  console.log(value);
+} */
+
+//map
+const myMap = new Map();
+const numberMap = new Map([
+  [1, "one"],
+  [2, "two"],
+]);
+
+myMap.set(3, "three");
+console.log(myMap);
+myMap.delete(4);
+myMap.get(2);
+myMap.has(1);
+
+for (const value of myMap.values()) {
   console.log(value);
 }
