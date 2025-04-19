@@ -8,8 +8,10 @@ function Home() {
     { id: 1, title: "jhon wick", release_date: "2022" },
     { id: 1, title: "jhon wick", release_date: "2022" },
   ];
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     alert(searchQuery);
+    setSearchQuery("..........");
   };
   return (
     <div className="home">
