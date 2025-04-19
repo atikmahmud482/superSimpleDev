@@ -188,7 +188,7 @@ for (const value of myMap.values()) {
 // throw new Error("this is not good!"); */
 
 //function
-function greet(name, age = 24) {
+/* function greet(name, age = 24) {
   console.log(name, age);
 }
 
@@ -200,4 +200,4 @@ console.log(greater);
 const greatest = (name) => {
   console.log(name);
 };
-console.log(greatest);
+console.log(greatest); */
