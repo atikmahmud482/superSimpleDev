@@ -1,22 +1,13 @@
 import "./App.css";
+import MovieCard from "./components/MovieCard";
 
 function App() {
   return (
     <>
-      {/* <div>
-        <Text display="hi"></Text>
-        <Text display="hello"></Text>
-      </div> */}
+      <MovieCard
+        movie={{ title: "Atik's Movie", release_date: "2025" }}></MovieCard>
     </>
   );
 }
-
-// function Text({ display }) {
-//   return (
-//     <div>
-//       <p>{display}</p>
-//     </div>
-//   );
-// }
 
 export default App;
