@@ -48,15 +48,25 @@ function Home() {
         </button>
       </form>
 
-      <div className="movies-grid">
-        {filteredMovies.length > 0 ? (
-          filteredMovies.map((movie) => (
-            <MovieCard movie={movie} key={movie.id} />
-          ))
-        ) : (
-          <p>No movies found. Try another search!</p>
-        )}
-      </div>
+      {loading ? (
+        <div className="loading">Loading movies...</div>
+      ) : error ? (
+        <div className="error-message">{error}</div>
+      ) : (
+        <div className="movies-grid">
+          {filteredMovies.length > 0 ? (
+            filteredMovies.map((movie) => (
+              <MovieCard movie={movie} key={movie.id} />
+            ))
+          ) : (
+            <p>
+              {movies.length === 0
+                ? "No movies available."
+                : "No movies found. Try another search!"}
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 }
