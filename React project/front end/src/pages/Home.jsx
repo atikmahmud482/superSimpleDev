@@ -15,9 +15,12 @@ function Home() {
         const popularMovies = await getPopularMovies();
         setMovies(popularMovies);
       } catch (err) {
+        setError("Failed to load movies...");
       } finally {
+        setLoading(false);
       }
     };
+    loadPopularMovies();
   }, []);
 
   const handleSubmit = (e) => {
