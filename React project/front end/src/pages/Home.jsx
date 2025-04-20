@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import MovieCard from "../components/MovieCard";
 import "../css/Home.css";
-import { getPopularMovies } from "../services/api";
+import { getPopularMovies, searchMovies } from "../services/api";
 
 function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -15,6 +15,7 @@ function Home() {
         const popularMovies = await getPopularMovies();
         setMovies(popularMovies);
       } catch (err) {
+        console.log(err);
         setError("Failed to load movies...");
       } finally {
         setLoading(false);
@@ -23,9 +24,24 @@ function Home() {
     loadPopularMovies();
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSearchQuery(""); // Optional: Clear input after search
+    if (!searchQuery.trim()) return;
+    if (loading) return;
+
+    setLoading(true);
+    try {
+      const searchResults = await searchMovies(searchQuery);
+      setMovies(searchResults);
+      setError(null);
+    } catch (err) {
+      console.log(err);
+      setError("Failed to search movies...");
+    } finally {
+      setLoading(false);
+    }
+
+    /* setSearchQuery(""); // Optional: Clear input after search */
   };
 
   // Filter movies (case-insensitive)
