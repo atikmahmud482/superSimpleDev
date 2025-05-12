@@ -7,3 +7,10 @@ let b = 34;
 console.log(`sum or ${a} and ${b} is ${a + b}`); */
 
 // No-3: What is hoisting? Provide an example.
+/* console.log(a); // undefined error
+var a = 1;
+
+console.log(b); // reference error
+console.log(c); // reference error
+let b = 3;
+const c = 5; */
