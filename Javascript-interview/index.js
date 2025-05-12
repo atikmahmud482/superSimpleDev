@@ -97,3 +97,10 @@ console.log(typeof name); // "string"
 
 let count = 5;
 console.log(typeof count); // "number" */
+
+/* // No-11: Purpose of the map method in JavaScript.
+// To transform elements of an array without modifying the original array.
+
+const numbers = [2, 3, 4, 5];
+const newNumbers = numbers.map((num) => num * 2);
+console.log(newNumbers); */
