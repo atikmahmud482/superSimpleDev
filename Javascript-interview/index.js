@@ -14,3 +14,8 @@ console.log(b); // reference error
 console.log(c); // reference error
 let b = 3;
 const c = 5; */
+
+// No-4: Difference between let, var, and const.
+/* var is a function scope variable.
+let is a block scope variable.
+const is a block and not reassign variable. */
