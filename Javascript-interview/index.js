@@ -19,3 +19,10 @@ const c = 5; */
 /* var is a function scope variable.
 let is a block scope variable.
 const is a block and not reassign variable. */
+
+// No-5: Data types in JavaScript.
+/* 2 Type : Primitive & Non-Primitive
+-Primitive (7): data types are immutable.
+string, number, boolean, nul, undefined, symbol, BigInt.
+-Non-Primitive(3): data types are mutable.
+Function,array,object */
