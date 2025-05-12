@@ -50,3 +50,13 @@ for(let i = 0; i< fruits.length; i++){
 
 or make it even simpler and use a for each loop 
 fruits.forEach(fruit => console.log(fruit)) */
+
+// No-7: Difference between == and ===.
+/* == (loose equality) compares two values for equality after converting both values to a common type.
+=== (strict equality) compares two values without performing type conversion. The values must be of the same type and value to be considered equal.
+'5' == 5    // true  → because '5' is converted to number
+'5' === 5   // false → because the types are different (string vs number)
+null == undefined  // true  → loosely equal
+null === undefined // false → not strictly equal
+0 == false  // true  → type coercion
+0 === false // false → different types */
