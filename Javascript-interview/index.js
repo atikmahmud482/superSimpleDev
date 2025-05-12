@@ -60,3 +60,12 @@ null == undefined  // true  → loosely equal
 null === undefined // false → not strictly equal
 0 == false  // true  → type coercion
 0 === false // false → different types */
+
+/* // No-8: What is the purpose of the isNaN function?
+The isNaN() function in JavaScript is used to determine whether a value is "NaN" (Not-a-Number) — that is, a value that is not a valid number.
+
+isNaN(123)         // false → 123 is a valid number
+isNaN('123')       // false → '123' gets converted to 123
+isNaN('hello')     // true  → can't convert 'hello' to a number
+isNaN(NaN)         // true  → NaN is literally "Not a Number"
+isNaN(undefined)   // true  → undefined → NaN */
