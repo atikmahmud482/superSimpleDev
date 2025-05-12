@@ -69,3 +69,22 @@ isNaN('123')       // false → '123' gets converted to 123
 isNaN('hello')     // true  → can't convert 'hello' to a number
 isNaN(NaN)         // true  → NaN is literally "Not a Number"
 isNaN(undefined)   // true  → undefined → NaN */
+
+/* // No-9: What is null vs undefined?
+In JavaScript, null and undefined both represent the absence of a value, but they are not the same and are used in different contexts:
+
+undefined
+Meaning: A variable has been declared but has not been assigned a value yet.
+Set by: JavaScript automatically.
+Type: undefined (primitive type)
+
+let x;
+console.log(x); // undefined
+
+null
+Meaning: A variable has been explicitly assigned to have "no value".
+Set by: Developer
+Type: object (this is a historical bug in JS)
+
+let y = null;
+console.log(y); // null */
