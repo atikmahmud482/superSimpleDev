@@ -88,3 +88,12 @@ Type: object (this is a historical bug in JS)
 
 let y = null;
 console.log(y); // null */
+/* 
+// No-10: Use of the typeof operator.
+The typeof operator in JavaScript is used to check the data type of a given value or variable.
+
+let name = "Atik";
+console.log(typeof name); // "string"
+
+let count = 5;
+console.log(typeof count); // "number" */
