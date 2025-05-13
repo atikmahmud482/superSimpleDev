@@ -104,3 +104,18 @@ console.log(typeof count); // "number" */
 const numbers = [2, 3, 4, 5];
 const newNumbers = numbers.map((num) => num * 2);
 console.log(newNumbers); */
+
+/* // No-12:  Explain event bubbling and event capturing.
+Event bubbling and event capturing are two phases of event propagation in the DOM (Document Object Model) when an event (like a click) occurs on an element. They determine the order in which elements receive the event.
+
+Event Capturing (Trickling Down)
+element.addEventListener('click', handler, true); // 'true' = useCapture
+
+ Event Bubbling (Bubbling Up)
+ element.addEventListener('click', handler); // 'false' or omitted = bubbling
+
+ For an event on a <button> inside a <div> inside the <body>:
+
+ Capturing: body → div → button
+Target: button
+Bubbling: button → div → body */
