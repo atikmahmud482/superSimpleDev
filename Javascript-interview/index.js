@@ -204,7 +204,7 @@ setTimeout(() => {
   console.log("Stopped after 5 seconds");
 }, 5000); */
 
-/* // No-16:  Describe promises in JavaScript.
+/* // No-17:  Describe promises in JavaScript.
 State	    Description
 pending	    Initial state, neither fulfilled nor rejected
 fulfilled	The operation completed successfully
@@ -244,3 +244,34 @@ const promise = new Promise((resolve, reject) => {
 }
 
 fetchData().then(data => console.log(data)); // Output after 2s: "Data fetched!" */
+
+/* // No-18:  Use of async and await in JavaScript.
+The async and await keywords are modern syntax built on top of Promises to make asynchronous code look and behave like synchronous code — improving readability and maintainability.
+
+✅ async Keyword
+Declares a function as asynchronous.
+An async function always returns a Promise, even if it returns a value directly.
+
+async function greet() {
+  return "Hello!";
+}
+
+greet().then(console.log); // Output: Hello!
+
+✅ await Keyword
+Can only be used inside an async function.
+Pauses the execution of the function until the Promise is resolved or rejected.
+Returns the resolved value of the Promise.
+
+function fetchData() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve("Data loaded"), 2000);
+  });
+}
+
+async function getData() {
+  const result = await fetchData();
+  console.log(result); // Output after 2s: "Data loaded"
+}
+
+getData(); */
