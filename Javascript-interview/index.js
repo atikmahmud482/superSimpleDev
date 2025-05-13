@@ -156,3 +156,19 @@ IIFE stands for Immediately Invoked Function Expression. It's a function that ru
   // code inside IIFE
   console.log("This runs immediately!");
 })(); */
+/* 
+// No-15: Explain closures in JavaScript.
+A closure is a function that "remembers" the variables from its lexical scope, even when the function is executed outside that scope.
+
+Definition (In Simple Terms)
+A closure is created when a function is defined inside another function, and it accesses variables from the outer function.
+
+function outer() {
+  const outerVar = "I am from outer";
+  function inner() {
+    console.log(outerVar); // inner function uses outerVar
+  }
+  return inner;
+}
+const closureFunc = outer();
+closureFunc(); // Output: I am from outer */
