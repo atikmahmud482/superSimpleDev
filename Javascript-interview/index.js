@@ -203,3 +203,44 @@ setTimeout(() => {
   clearInterval(intervalID);
   console.log("Stopped after 5 seconds");
 }, 5000); */
+
+/* // No-16:  Describe promises in JavaScript.
+State	    Description
+pending	    Initial state, neither fulfilled nor rejected
+fulfilled	The operation completed successfully
+rejected	The operation failed
+
+Creating a Promise--
+const promise = new Promise((resolve, reject) => {
+  // async operation
+  let success = true;
+
+  if (success) {
+    resolve("Operation successful!");
+  } else {
+    reject("Something went wrong.");
+  }
+});
+
+ Consuming a Promise--
+ promise
+  .then(result => {
+    console.log(result); // "Operation successful!"
+  })
+  .catch(error => {
+    console.error(error); // "Something went wrong."
+  })
+  .finally(() => {
+    console.log("Promise is settled.");
+  });
+
+  Real-World Example--
+  function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Data fetched!");
+    }, 2000);
+  });
+}
+
+fetchData().then(data => console.log(data)); // Output after 2s: "Data fetched!" */
