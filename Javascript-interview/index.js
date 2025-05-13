@@ -148,3 +148,11 @@ function multiplier(factor) {
 
 const double = multiplier(2);
 console.log(double(5)); // Output: 10 */
+
+/* // No-14:  What is an IIFE (Immediately Invoked Function Expression)?
+IIFE stands for Immediately Invoked Function Expression. It's a function that runs as soon as it is defined, without needing to be called separately.
+
+(function() {
+  // code inside IIFE
+  console.log("This runs immediately!");
+})(); */
