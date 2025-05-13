@@ -288,3 +288,23 @@ function sayHi() {
 
 sayHi.call(person1); // Hi, I'm Alice
 sayHi.call(person2); // Hi, I'm Bob */
+
+/* // No-20: What is event delegation?
+Event delegation is a technique in JavaScript where you attach a single event listener to a parent element instead of adding listeners to each individual child element.
+
+This works because of event bubbling — events move up from the target element to its ancestors.
+
+✅ Example Without Delegation
+const items = document.querySelectorAll('li');
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    console.log(item.textContent);
+  });
+});
+
+✅ Example With Event Delegation
+document.querySelector('ul').addEventListener('click', (e) => {
+  if (e.target.tagName === 'LI') {
+    console.log(e.target.textContent);
+  }
+}); */
