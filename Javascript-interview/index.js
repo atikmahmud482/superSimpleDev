@@ -119,3 +119,32 @@ element.addEventListener('click', handler, true); // 'true' = useCapture
  Capturing: body → div → button
 Target: button
 Bubbling: button → div → body */
+
+/* // No-13: What are higher-order functions? Provide an example.
+
+A higher-order function is a function that does at least one of the following:
+Takes another function as an argument, or
+Returns a function as a result.
+Higher-order functions are a key feature in JavaScript and other functional programming languages.
+
+Example 1: Function That Takes Another Function
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+
+function processUserInput(callback) {
+  const name = "Atik";
+  console.log(callback(name));
+}
+
+processUserInput(greet); // Output: Hello, Atik!
+
+Example 2: Function That Returns Another Function
+function multiplier(factor) {
+  return function (number) {
+    return number * factor;
+  };
+}
+
+const double = multiplier(2);
+console.log(double(5)); // Output: 10 */
