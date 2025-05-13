@@ -172,3 +172,34 @@ function outer() {
 }
 const closureFunc = outer();
 closureFunc(); // Output: I am from outer */
+
+/* // No-16: How do setTimeout and setInterval work?
+⏱️ setTimeout and setInterval in JavaScript
+Both setTimeout and setInterval are asynchronous functions provided by the browser (or Node.js) to schedule code execution.
+
+They work by delegating timing tasks to the JavaScript Event Loop using the Web APIs.
+
+1. setTimeout()
+Executes a function once after a specified delay.
+setTimeout(() => {
+  console.log("Runs after 2 seconds");
+}, 2000);
+
+2. setInterval()
+setInterval(() => {
+  console.log("Runs every 1 second");
+}, 1000);
+
+❌ Clearing Timers
+To stop setTimeout or setInterval, use:
+clearTimeout(timeoutID)
+clearInterval(intervalID)
+
+const intervalID = setInterval(() => {
+  console.log("Still running...");
+}, 1000);
+
+setTimeout(() => {
+  clearInterval(intervalID);
+  console.log("Stopped after 5 seconds");
+}, 5000); */
