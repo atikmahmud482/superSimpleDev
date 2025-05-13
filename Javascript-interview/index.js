@@ -275,3 +275,16 @@ async function getData() {
 }
 
 getData(); */
+
+/* // No-19: Difference between call, apply, and bind.
+All three methods — call(), apply(), and bind() — are used to set the value of this inside a function and optionally pass arguments. They come from Function.prototype and are useful when you want to reuse functions in different contexts.
+
+const person1 = { name: "Alice" };
+const person2 = { name: "Bob" };
+
+function sayHi() {
+  console.log(`Hi, I'm ${this.name}`);
+}
+
+sayHi.call(person1); // Hi, I'm Alice
+sayHi.call(person2); // Hi, I'm Bob */
