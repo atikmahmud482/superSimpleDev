@@ -58,3 +58,58 @@ Read-only	           Can be updated
   <li key={item.id}>{item.name}</li>
 ))}
 
+🔹 9. Conditional Rendering
+{isLoggedIn ? <Logout /> : <Login />}
+
+🔹 10. React Router DOM (v6+)
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+<BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="/about" element={<About />} />
+  </Routes>
+</BrowserRouter>
+
+🔹 11. Lifting State Up
+When two child components need to share data, lift state to the parent.
+
+🔹 12. Controlled Component (Form Handling)
+const [name, setName] = useState("");
+
+<input value={name} onChange={e => setName(e.target.value)} />
+
+🔹 13. useRef (Reference DOM)
+const inputRef = useRef();
+<input ref={inputRef} />
+
+🔹 14. Reusable Component Example
+function Button({ text, onClick }) {
+  return <button onClick={onClick}>{text}</button>;
+}
+
+🔹 15. Common React Questions
+Q: What is virtual DOM?
+A lightweight JS copy of the real DOM. React uses it to detect changes efficiently.
+
+Q: Why keys in list?
+To help React identify which items changed/updated efficiently.
+
+Q: Difference between useEffect and useState?
+
+useState stores data
+
+useEffect runs side effects after rendering
+
+Q: Can we update props?
+No. Props are read-only. Use state for updates.
+
+🔹 Bonus (Advanced Topics You May Hear)
+Custom Hooks: Reusable logic functions
+
+Context API: Global state sharing
+
+React.memo: Prevent re-renders
+
+React Fragment: <>...</> instead of <div>
+
