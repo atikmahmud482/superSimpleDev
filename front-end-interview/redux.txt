@@ -1,0 +1,88 @@
+📘 Redux Interview Notes (with Redux Toolkit)
+🔹 1. What is Redux?
+A state management library for JavaScript apps.
+
+Helps manage global state in a predictable way using a single source of truth (store).
+
+🔹 2. Why Use Redux?
+When state needs to be shared between many components.
+
+Helps avoid "prop drilling" (passing props through many layers).
+
+Better state debugging, testing, and scaling.
+
+🔹 3. Core Concepts
+Concept  	Description
+Store	    Holds the entire state tree
+Action	    Plain object describing what happened (type)
+Reducer	    Pure function that updates state
+Dispatch	Sends action to reducer
+Selector	Reads data from the store
+
+🔹 4. Redux Flow (Simple)
+Component -> dispatch(action) -> reducer(state, action) -> new state -> UI updates
+
+🔹 5. Redux Toolkit (Modern, Easier Redux)
+✅ Simplifies setup
+✅ Uses createSlice, configureStore
+✅ Recommended by Redux team
+
+🔹 6. Minimal Redux Toolkit Example
+npm install @reduxjs/toolkit react-redux
+
+store.js
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from './counterSlice';
+
+export const store = configureStore({
+  reducer: {
+    counter: counterReducer
+  }
+});
+
+counterSlice.js
+import { createSlice } from '@reduxjs/toolkit';
+
+const counterSlice = createSlice({
+  name: 'counter',
+  initialState: { value: 0 },
+  reducers: {
+    increment: state => { state.value += 1 },
+    decrement: state => { state.value -= 1 }
+  }
+});
+
+export const { increment, decrement } = counterSlice.actions;
+export default counterSlice.reducer;
+
+App.jsx
+import { useSelector, useDispatch } from 'react-redux';
+import { increment, decrement } from './counterSlice';
+
+function App() {
+  const count = useSelector(state => state.counter.value);
+  const dispatch = useDispatch();
+
+  return (
+    <>
+      <h1>{count}</h1>
+      <button onClick={() => dispatch(increment())}>+</button>
+      <button onClick={() => dispatch(decrement())}>-</button>
+    </>
+  );
+}
+
+main.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { Provider } from 'react-redux';
+import { store } from './store';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+);
+
+
