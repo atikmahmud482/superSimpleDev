@@ -9,3 +9,20 @@ let age = 24;       // Number
 let isDev = true;   // Boolean
 let nothing = null; // Null
 let notSet;         // Undefined
+
+🔹 2. Variable Declarations
+var: Function-scoped (avoid)
+
+let: Block-scoped
+
+const: Block-scoped + immutable (value can be object, but ref can’t change)
+
+🔹 3. Functions
+Function Declaration:
+
+function greet(name) {
+  return `Hello, ${name}`;
+}
+
+Arrow Function:
+const greet = name => `Hello, ${name}`;
