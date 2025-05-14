@@ -1,0 +1,11 @@
+📒 JavaScript Interview Notes (Quick & Practical)
+🔹 1. Data Types
+Primitive: String, Number, Boolean, Null, Undefined, Symbol, BigInt
+
+Reference: Object, Array, Function
+
+let name = "Atik";  // String
+let age = 24;       // Number
+let isDev = true;   // Boolean
+let nothing = null; // Null
+let notSet;         // Undefined
