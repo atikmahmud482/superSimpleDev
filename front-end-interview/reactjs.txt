@@ -23,3 +23,38 @@ Props: Pass data from parent to child
 function Welcome({ name }) {
   return <h2>Hello, {name}</h2>;
 }
+
+🔹 4. State (useState)
+State holds dynamic data in components.
+
+import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  return <button onClick={() => setCount(count + 1)}>{count}</button>;
+}
+
+🔹 5. useEffect (Side Effects)
+Runs after render. Used for:
+
+API calls
+Event listeners
+DOM updates
+
+useEffect(() => {
+  fetchData();
+}, []); // [] = run only once (on mount)
+
+🔹 6. Props vs State
+Props	               State
+Passed from parent	   Managed in component
+Read-only	           Can be updated
+
+🔹 7. Event Handling
+<button onClick={() => alert("Clicked")}>Click Me</button>
+
+🔹 8. Lists and Keys
+{items.map(item => (
+  <li key={item.id}>{item.name}</li>
+))}
+
