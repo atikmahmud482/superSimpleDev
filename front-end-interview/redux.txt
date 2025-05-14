@@ -85,4 +85,18 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </Provider>
 );
 
+🔹 7. Interview Q&A (Redux)
+Q: What is Redux used for?
+Managing global application state outside of components.
 
+Q: What’s the difference between context and Redux?
+
+Context is good for simple state sharing.
+
+Redux is better for complex logic, multiple actions, middleware, etc.
+
+Q: What is a reducer?
+A pure function that takes state and action, returns new state.
+
+Q: Why use Redux Toolkit?
+It reduces boilerplate and makes Redux easier and safer to use.
