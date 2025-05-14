@@ -81,3 +81,51 @@ Nullish coalescing: value ?? 'default'
 Functions and var are hoisted. let and const are not.
 console.log(x); // undefined (hoisted)
 var x = 5;
+
+🔹 11. Closures
+A function that remembers its outer scope even after the outer function has executed.
+
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+const counter = outer();
+counter(); // 1
+counter(); // 2
+
+🔹 12. this Keyword
+Depends on how a function is called:
+
+const obj = {
+  name: "Atik",
+  sayName() {
+    console.log(this.name); // Atik
+  }
+};
+obj.sayName();
+
+🔹 13. Callback vs Promise vs Async
+Callback: Traditional, nested
+
+Promise: .then().catch()
+
+Async/Await: Cleaner syntax
+
+🔹 14. Common Interview Snippets
+Check if a string is a palindrome:
+
+function isPalindrome(str) {
+  return str === str.split("").reverse().join("");
+}
+Reverse an array without using reverse()
+
+function reverse(arr) {
+  let result = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    result.push(arr[i]);
+  }
+  return result;
+}
