@@ -1,0 +1,25 @@
+📘 React.js Interview Notes (Quick & Practical)
+🔹 1. What is React?
+Library (not framework) for building UI.
+
+Developed by Facebook, based on components and JSX.
+
+function App() {
+  return <h1>Hello React</h1>;
+}
+
+🔹 2. JSX (JavaScript XML)
+Looks like HTML, but it's syntactic sugar for React.createElement.
+
+Must return a single parent element.
+
+const element = <div>Hello, {name}</div>;
+
+🔹 3. Components
+Functional Components (most common now)
+
+Props: Pass data from parent to child
+
+function Welcome({ name }) {
+  return <h2>Hello, {name}</h2>;
+}
