@@ -308,3 +308,52 @@ document.querySelector('ul').addEventListener('click', (e) => {
     console.log(e.target.textContent);
   }
 }); */
+
+/* // No-21 Explain the event loop in JavaScript. 
+The event loop in JavaScript is a core concept that allows non-blocking asynchronous operations, despite JavaScript being single-threaded.
+
+🧠 Key Concepts
+Call Stack
+
+This is where functions are pushed when called and popped when returned.
+
+JavaScript runs code synchronously in the call stack.
+
+Web APIs (Browser APIs)
+
+When you use functions like setTimeout, fetch, or event listeners, they are handled by the browser's Web APIs (not the call stack).
+
+Callback Queue (Task Queue)
+
+After async operations complete, their callback functions are pushed into this queue.
+
+Microtask Queue
+
+Contains promises and other microtasks.
+
+Microtasks are prioritized and executed before the callback queue.
+
+Event Loop
+
+Constantly checks:
+
+Is the call stack empty?
+
+If yes, it pushes the next task (first microtasks, then callback queue) to the stack.
+
+console.log("1");
+
+setTimeout(() => {
+  console.log("2");
+}, 0);
+
+Promise.resolve().then(() => {
+  console.log("3");
+});
+
+console.log("4");
+
+1
+4
+3
+2 */
