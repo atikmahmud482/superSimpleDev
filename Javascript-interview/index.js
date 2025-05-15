@@ -357,3 +357,32 @@ console.log("4");
 4
 3
 2 */
+
+/* // No-22:  Difference between promises and async/await.
+The difference between Promises and async/await in JavaScript lies mainly in syntax and readability — both are used to handle asynchronous operations, but they offer different styles of doing so.
+
+🔸 Promises
+A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation.
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Data loaded");
+    }, 1000);
+  });
+}
+
+fetchData()
+  .then((data) => console.log(data))
+  .catch((err) => console.error(err));
+
+  🔹 async/await
+async/await is syntactic sugar built on top of promises that makes async code look and behave like synchronous code.
+
+async function loadData() {
+  try {
+    const data = await fetchData();
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
+} */
