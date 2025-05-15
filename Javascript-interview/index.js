@@ -448,3 +448,43 @@ console.log(gen.next()); // { value: 'A', done: false }
 console.log(gen.next()); // { value: 'B', done: false }
 console.log(gen.next()); // { value: 'C', done: false }
 console.log(gen.next()); // { value: undefined, done: true } */
+
+/* // No-26: What are weak maps and weak sets in JavaScript?
+They are special collections that store objects only as keys (WeakMap) or values (WeakSet) and allow those objects to be garbage collected when no longer in use.
+✅ WeakMap
+A collection of key-value pairs.
+
+Keys must be objects, not primitives.
+
+Does not prevent garbage collection of the key object.
+
+Not iterable (you can't loop over it).
+
+🔸 Syntax:
+const wm = new WeakMap();
+const obj = {};
+
+wm.set(obj, "secret");
+wm.get(obj); // "secret"
+
+wm.delete(obj); // true
+
+✅ WeakSet
+A collection of unique object values.
+
+Only objects can be added.
+
+Not iterable and has no .size property.
+
+🔸 Syntax:
+const ws = new WeakSet();
+const user = {};
+
+ws.add(user);
+ws.has(user); // true
+
+ws.delete(user); // true
+
+🔒 Use Cases
+Private data storage for objects (WeakMap)
+Tracking object presence without preventing garbage collection (WeakSet) */
