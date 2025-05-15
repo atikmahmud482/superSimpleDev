@@ -386,3 +386,24 @@ async function loadData() {
     console.error(err);
   }
 } */
+
+/* // No-23: Purpose of the reduce method in arrays. 
+🔹 Purpose of reduce()
+The reduce() method is used to combine all elements of an array into a single value.
+
+array.reduce((acc, curr) => newAcc, initialValue);
+
+acc = accumulator (result so far)
+
+curr = current element
+
+initialValue = starting value
+
+🔸 Examples
+1. Sum numbers: [1, 2, 3, 4].reduce((sum, n) => sum + n, 0); // 10
+
+2. Flatten array: [[1, 2], [3], [4]].reduce((a, b) => a.concat(b), []); // [1, 2, 3, 4]
+3. Count items: ['a', 'b', 'a'].reduce((acc, c) => {
+                    acc[c] = (acc[c] || 0) + 1;
+                     return acc;
+                 }, {}); // { a: 2, b: 1 } */
