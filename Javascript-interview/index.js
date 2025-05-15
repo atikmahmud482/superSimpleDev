@@ -518,3 +518,37 @@ JavaScript uses automatic garbage collection
 Objects are freed when no longer reachable
 
 You don’t manage memory manually, but you must avoid leaks by cleaning up references */
+
+/* // No-28:  Difference between shallow and deep copying.
+✅ Shallow Copy
+A shallow copy copies only the first level of an object or array.
+Nested objects/arrays are still shared (same reference).
+
+🔸 Example: 
+const original = { name: "Atik", address: { city: "Dhaka" } };
+const shallow = { ...original };
+
+shallow.address.city = "Chittagong";
+console.log(original.address.city); // "Chittagong" (changed!)
+
+🧠 Methods:
+Object.assign({}, obj)
+Spread operator: { ...obj }, [...arr]
+
+✅ Deep Copy
+A deep copy copies all levels, including nested structures.
+Original and copy are completely independent.
+
+🔸 Example:
+const original = { name: "Atik", address: { city: "Dhaka" } };
+const deep = JSON.parse(JSON.stringify(original));
+
+deep.address.city = "Chittagong";
+console.log(original.address.city); // "Dhaka" (unchanged)
+
+🧠 Methods:
+structuredClone(obj) ✅ (modern & preferred)
+
+JSON.parse(JSON.stringify(obj)) ❌ (but loses functions, dates, etc.)
+
+Libraries like Lodash: _.cloneDeep(obj) */
