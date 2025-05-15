@@ -586,3 +586,65 @@ function test() {
 }
 test();
  */
+/* // No-30: Observer pattern and its relation to JavaScript.
+The Observer Pattern is a design pattern where an object (subject) maintains a list of dependents (observers) and notifies them automatically of any state changes, usually by calling one of their methods.
+
+✅ Key Points
+Subject: The object being observed.
+
+Observers: Objects that subscribe to changes/events from the subject.
+
+When the subject changes, it notifies all observers.
+
+🔸 Relation to JavaScript
+JavaScript uses the Observer pattern extensively, especially for event handling:
+
+DOM events (addEventListener): Elements (subjects) notify listeners (observers) when events happen.
+
+Promises: Observers react to resolved or rejected states.
+
+Libraries like RxJS implement reactive programming using this pattern.
+
+Frameworks like React use similar concepts with state and props updates.
+
+✅ Simple Example in JS
+class Subject {
+  constructor() {
+    this.observers = [];
+  }
+  
+  subscribe(observer) {
+    this.observers.push(observer);
+  }
+  
+  unsubscribe(observer) {
+    this.observers = this.observers.filter(obs => obs !== observer);
+  }
+  
+  notify(data) {
+    this.observers.forEach(observer => observer.update(data));
+  }
+}
+
+class Observer {
+  update(data) {
+    console.log("Observer received:", data);
+  }
+}
+
+const subject = new Subject();
+const observer1 = new Observer();
+const observer2 = new Observer();
+
+subject.subscribe(observer1);
+subject.subscribe(observer2);
+
+subject.notify("Hello Observers!");  
+// Both observers receive the message
+
+🧠 Summary
+Observer pattern lets objects subscribe and react to changes.
+
+JavaScript’s event-driven nature and tools like Promises make heavy use of this pattern.
+
+It’s foundational for reactive programming and event handling. */
