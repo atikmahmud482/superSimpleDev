@@ -429,3 +429,22 @@ const greet = (greeting) => (name) => `${greeting}, ${name}!`;
 
 const sayHello = greet("Hello");
 sayHello("Atik"); // "Hello, Atik!" */
+
+/* No-25: What is a generator function and its usage?  
+A generator function allows you to pause and resume execution using the yield keyword.
+
+It’s declared with function* and returns a Generator object.
+
+function* generatorFunc() {
+  yield 'A';
+  yield 'B';
+  yield 'C';
+}
+
+✅ Usage:
+const gen = generatorFunc();
+
+console.log(gen.next()); // { value: 'A', done: false }
+console.log(gen.next()); // { value: 'B', done: false }
+console.log(gen.next()); // { value: 'C', done: false }
+console.log(gen.next()); // { value: undefined, done: true } */
