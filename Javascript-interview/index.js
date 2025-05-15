@@ -488,3 +488,33 @@ ws.delete(user); // true
 🔒 Use Cases
 Private data storage for objects (WeakMap)
 Tracking object presence without preventing garbage collection (WeakSet) */
+
+/* // No-27: How does JavaScript handle memory management?
+JavaScript handles memory management automatically using Garbage Collection (GC), which means it allocates and frees memory behind the scenes.
+
+🧠 Key Concepts
+1. Memory Allocation
+When you create variables, objects, or functions:
+let num = 42;
+let obj = { name: "Atik" };
+
+2. Garbage Collection
+JavaScript automatically frees memory that is no longer reachable—this is called Garbage Collection.
+
+✅ Reachability
+An object is "reachable" if it can be accessed from the root:
+
+Global variables
+
+Variables in current function call
+
+Closures
+
+If there’s no reference to an object, it's marked for deletion.
+
+✅ Summary
+JavaScript uses automatic garbage collection
+
+Objects are freed when no longer reachable
+
+You don’t manage memory manually, but you must avoid leaks by cleaning up references */
