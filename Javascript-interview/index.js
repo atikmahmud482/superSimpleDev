@@ -407,3 +407,25 @@ initialValue = starting value
                     acc[c] = (acc[c] || 0) + 1;
                      return acc;
                  }, {}); // { a: 2, b: 1 } */
+
+/* // No-24: Explain currying in JavaScript.
+🔹 What is Currying in JavaScript?
+Currying is a technique where a function with multiple arguments is transformed into a series of functions that each take one argument.
+Without currying:
+function add(a, b) {
+  return a + b;
+}
+add(2, 3); // 5
+With currying:
+function add(a) {
+  return function(b) {
+    return a + b;
+  };
+}
+add(2)(3); // 5
+
+✅ Real-World Use Case
+const greet = (greeting) => (name) => `${greeting}, ${name}!`;
+
+const sayHello = greet("Hello");
+sayHello("Atik"); // "Hello, Atik!" */
