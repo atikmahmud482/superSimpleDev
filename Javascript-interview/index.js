@@ -552,3 +552,37 @@ structuredClone(obj) ✅ (modern & preferred)
 JSON.parse(JSON.stringify(obj)) ❌ (but loses functions, dates, etc.)
 
 Libraries like Lodash: _.cloneDeep(obj) */
+
+/* // No-29: What is strict mode in JavaScript and how is it enabled?
+🔹 What is Strict Mode in JavaScript?
+Strict mode is a way to opt in to a restricted variant of JavaScript that helps catch common coding mistakes and "unsafe" actions, making your code more secure and easier to debug.
+
+✅ Key Features of Strict Mode
+Disallows use of undeclared variables
+
+Throws errors for assignments to read-only properties
+
+Prevents accidental globals
+
+Disables with statements
+
+Makes this default to undefined instead of the global object in functions
+
+Throws errors for duplicate parameter names
+
+✅ How to Enable Strict Mode
+Add this line at the top of a script or function:
+"use strict";
+
+Example — Global Strict Mode
+"use strict";
+
+x = 10; // Error: x is not defined
+
+Example — Function Strict Mode
+function test() {
+  "use strict";
+  y = 20; // Error: y is not defined
+}
+test();
+ */
