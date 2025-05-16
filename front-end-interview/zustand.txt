@@ -42,3 +42,18 @@ function Controls() {
   const increase = useBearStore((state) => state.increase);
   return <button onClick={increase}>Add Bear</button>;
 }
+
+⚒ Features
+🔄 Partial Subscriptions (Better Performance)
+const bears = useBearStore((state) => state.bears);
+Only re-renders when bears changes.
+
+🧠 Combine with Zustand Devtools
+npm install zustand zustand-middleware
+import { create } from 'zustand';
+import { devtools } from 'zustand/middleware';
+
+const useStore = create(devtools((set) => ({
+  count: 0,
+  increment: () => set((state) => ({ count: state.count + 1 })),
+})));
