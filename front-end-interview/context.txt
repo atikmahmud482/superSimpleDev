@@ -1,0 +1,8 @@
+In React, Context provides a way to pass data through the component tree without having to pass props down manually at every level. It’s useful for global data like authentication status, themes, or user preferences.
+
+🧠 Why use React Context?
+To avoid "prop drilling" (passing props through multiple layers).
+
+To manage global state more cleanly.
+
+To share values between deeply nested components.
