@@ -13,3 +13,19 @@ React-free store (you can use it outside components)
 Partial updates with selective re-renders
 
 Ideal for both small and large applications
+
+🚀 Basic Usage
+1. Install
+npm install zustand
+# or
+yarn add zustand
+
+2. Create a Store
+// store.js
+import { create } from 'zustand';
+
+const useBearStore = create((set) => ({
+  bears: 0,
+  increase: () => set((state) => ({ bears: state.bears + 1 })),
+  reset: () => set({ bears: 0 }),
+}));
