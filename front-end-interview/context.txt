@@ -44,3 +44,14 @@ const ThemedComponent = () => {
 
   return <div>The current theme is {theme}</div>;
 };
+
+🧰 When to Use Context vs Other State Management Tools
+Use Case	                               Suggested Tool
+Theme, auth, language	                   Context API
+Complex global state, performance sensitive	Redux / Zustand / Jotai
+Local component state	                    useState or useReducer
+
+⚠️ Tips
+Don't overuse context for frequently changing values — it may cause unnecessary re-renders.
+
+Combine with useReducer or useState for more dynamic contexts.
