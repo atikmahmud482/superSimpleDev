@@ -13,3 +13,24 @@ To share values between deeply nested components.
 import React, { createContext } from 'react';
 
 export const ThemeContext = createContext();
+
+2. Provide the Context (in a parent component)
+export const ThemeProvider = ({ children }) => {
+  const theme = 'dark'; // or use useState/useReducer for dynamic values
+
+  return (
+    <ThemeContext.Provider value={{ theme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
+You typically wrap your app (or a part of it) in this provider:
+import { ThemeProvider } from './ThemeContext';
+
+function App() {
+  return (
+    <ThemeProvider>
+      <YourComponent />
+    </ThemeProvider>
+  );
+}
