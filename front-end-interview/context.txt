@@ -34,3 +34,13 @@ function App() {
     </ThemeProvider>
   );
 }
+
+3. Consume the Context (in any child component)
+import { useContext } from 'react';
+import { ThemeContext } from './ThemeContext';
+
+const ThemedComponent = () => {
+  const { theme } = useContext(ThemeContext);
+
+  return <div>The current theme is {theme}</div>;
+};
