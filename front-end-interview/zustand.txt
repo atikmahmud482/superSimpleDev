@@ -57,3 +57,21 @@ const useStore = create(devtools((set) => ({
   count: 0,
   increment: () => set((state) => ({ count: state.count + 1 })),
 })));
+
+📦 Advanced Example with TypeScript
+type State = {
+  count: number;
+  increment: () => void;
+};
+
+const useStore = create<State>((set) => ({
+  count: 0,
+  increment: () => set((state) => ({ count: state.count + 1 })),
+}));
+
+🧩 When to Use Zustand Over Context or Redux?
+Use Case	                    Suggested Tool
+Simple global state	            ✅ Zustand
+Complex state, boilerplate OK	Redux
+Dynamic context (theme, auth)	Context API
+Local component state	        useState/useReducer
