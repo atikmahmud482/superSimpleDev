@@ -1,0 +1,15 @@
+Zustand is a fast, simple, and scalable state management library for React. It's lighter than Redux and easier to set up, making it a popular choice for frontend developers who want global state without boilerplate.
+
+🐻 What is Zustand?
+Zustand (German for state) lets you create global state using a minimal API — no reducers, no actions, no context boilerplate.
+
+✅ Why Use Zustand?
+Zero boilerplate
+
+Built-in support for React hooks
+
+React-free store (you can use it outside components)
+
+Partial updates with selective re-renders
+
+Ideal for both small and large applications
