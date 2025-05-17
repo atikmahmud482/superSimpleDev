@@ -149,3 +149,10 @@ const inputRef = useRef();
 10. Context API
 const ThemeContext = createContext("light");
 const theme = useContext(ThemeContext);
+
+✅ Top 15 React Interview Questions & Answers
+1. What is React?
+React is a JavaScript library for building user interfaces using components and a virtual DOM for efficient updates.
+
+2. What is JSX?
+JSX is a syntax extension that lets you write HTML inside JavaScript. It's not required, but widely used in React.
