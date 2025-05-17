@@ -113,3 +113,11 @@ React.memo: Prevent re-renders
 
 React Fragment: <>...</> instead of <div>
 
+⚛️ React.js Core Concepts
+1. JSX
+JSX lets you write HTML inside JavaScript.
+const heading = <h1>Hello, Atik!</h1>;
+
+2. Functional Components
+const Welcome = ({ name }) => <h1>Hello, {name}</h1>;
+
