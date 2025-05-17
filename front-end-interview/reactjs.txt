@@ -175,3 +175,26 @@ Virtual DOM is an in-memory representation of the real DOM. React updates the vi
 7. What is a key in a list?
 A key is a unique identifier for list items used to optimize rendering.
 
+8. What is lifting state up?
+Moving state to the nearest common parent component to share data between children.
+
+9. What is controlled vs uncontrolled component?
+Controlled: React controls the form data via useState
+
+Uncontrolled: Data is handled by the DOM using ref
+
+10. What is React Router?
+A routing library used to navigate between components/pages in a SPA.
+<Route path="/about" element={<About />} />
+
+11. What are hooks in React?
+Hooks let you use state and other React features without writing a class.
+
+Common hooks:
+
+useState
+useEffect
+useContext
+useRef
+useMemo
+useCallback
