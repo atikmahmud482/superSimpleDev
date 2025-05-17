@@ -161,7 +161,17 @@ JSX is a syntax extension that lets you write HTML inside JavaScript. It's not r
 Components are reusable UI blocks. They can be functional or class-based.
 
 4. What is the difference between props and state?
-Props	State
-Read-only	Mutable
-Passed down	Local to component
-Used for config	Used for data changes
+Props	            State
+Read-only	        Mutable
+Passed down	      Local to component
+Used for config	  Used for data changes
+
+5. What is useEffect used for?
+useEffect handles side effects like API calls, DOM manipulation, and timers.
+
+6. What is Virtual DOM?
+Virtual DOM is an in-memory representation of the real DOM. React updates the virtual DOM first and efficiently syncs it with the real DOM.
+
+7. What is a key in a list?
+A key is a unique identifier for list items used to optimize rendering.
+
