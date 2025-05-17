@@ -135,3 +135,9 @@ useEffect(() => {
 
 6. Event Handling
 <button onClick={() => alert("Clicked!")}>Click</button>
+
+7. Conditional Rendering
+{isLoggedIn ? <Dashboard /> : <Login />}
+
+8. List Rendering
+{items.map(item => <li key={item.id}>{item.name}</li>)}
