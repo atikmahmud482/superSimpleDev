@@ -156,3 +156,12 @@ React is a JavaScript library for building user interfaces using components and 
 
 2. What is JSX?
 JSX is a syntax extension that lets you write HTML inside JavaScript. It's not required, but widely used in React.
+
+3. What are components?
+Components are reusable UI blocks. They can be functional or class-based.
+
+4. What is the difference between props and state?
+Props	State
+Read-only	Mutable
+Passed down	Local to component
+Used for config	Used for data changes
