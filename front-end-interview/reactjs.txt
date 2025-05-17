@@ -198,3 +198,16 @@ useContext
 useRef
 useMemo
 useCallback
+
+12. What is useRef used for?
+To access DOM elements directly or store a value without re-rendering.
+
+13. What is useMemo?
+Memoizes a computed value to avoid re-computing on every render.
+
+14. What is useCallback?
+Memoizes a function so it doesn’t get recreated unless dependencies change.
+
+15. What is the Context API?
+A way to pass data deeply through the component tree without using props.
+
