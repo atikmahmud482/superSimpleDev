@@ -121,3 +121,9 @@ const heading = <h1>Hello, Atik!</h1>;
 2. Functional Components
 const Welcome = ({ name }) => <h1>Hello, {name}</h1>;
 
+3. Props
+Props are read-only and passed from parent to child.
+<Profile name="Atik" />
+
+4. State with useState
+const [count, setCount] = useState(0);
