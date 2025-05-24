@@ -68,3 +68,76 @@ B) index.php
 C) page.php
 D) front-page.php
 ✅ Answer: D
+
+---
+
+✅ Elementor & Page Builders (11–20)
+Elementor is mainly used for:
+A) SEO
+B) Database Management
+C) Drag-and-drop Page Building
+D) Security
+✅ Answer: C
+
+Which Elementor feature allows global style reuse?
+A) Global Fonts
+B) Site Kit
+C) Global Widgets
+D) Header Editor
+✅ Answer: C
+
+Can you use Elementor with any theme?
+A) Only with default themes
+B) Only with Divi
+C) Yes, it supports most themes
+D) Only with premium themes
+✅ Answer: C
+
+Which of these is NOT a feature in Elementor Pro?
+A) Theme Builder
+B) Form Builder
+C) WooCommerce Builder
+D) SEO Optimizer
+✅ Answer: D
+
+Which Elementor widget is used to display posts dynamically?
+A) Image Carousel
+B) Posts
+C) Gallery
+D) List
+✅ Answer: B
+
+What is the purpose of the Navigator in Elementor?
+A) Preview theme
+B) Track user sessions
+C) Navigate widget structure
+D) Access plugin settings
+✅ Answer: C
+
+How do you create a popup in Elementor?
+A) With header.php
+B) Using the Popup Builder (Pro)
+C) Using Gutenberg
+D) You can't create popups
+✅ Answer: B
+
+What happens when you deactivate Elementor?
+A) Nothing changes
+B) Design stays the same
+C) Page layout may break
+D) Site speeds up
+✅ Answer: C
+
+Which plugin is often paired with Elementor for dynamic data?
+A) WPForms
+B) JetEngine
+C) Yoast SEO
+D) Akismet
+✅ Answer: B
+
+Which of the following helps create headers and footers in Elementor?
+A) Layout Builder
+B) Theme Builder
+C) Menu Builder
+D) Page Manager
+✅ Answer: B
