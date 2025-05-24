@@ -31,3 +31,31 @@ A: I create a Collection, set the necessary fields (title, image, slug, etc.), t
 
 7. Q: Have you used interactions and animations in Webflow?
 A: Yes. I use Webflow Interactions 2.0 to create animations like fade-ins, scroll effects, and hover states — ensuring performance-friendly and responsive transitions.
+
+✅ Behavioral Questions & Answers
+8. Q: How do you handle a client who wants frequent design changes?
+A: I listen patiently, offer suggestions based on UX best practices, and explain trade-offs. I usually group changes into phases and share updated previews regularly for faster approvals.
+
+9. Q: How do you work with a design team or Figma file?
+A: I import Figma designs into Webflow manually, ensuring pixel-perfect spacing, typography, and colors. I communicate with designers for clarification and follow their design system strictly.
+
+10. Q: What would you do if you encountered a bug right before a project deadline?
+A: I would immediately isolate the issue using preview/debug tools. If it's minor, I fix and test. If critical and time is short, I apply a temporary workaround and notify the team, planning a post-launch fix.
+
+✅ Portfolio-Related Questions
+11. Q: Can you walk us through a Webflow project you built?
+A: [Prepare your best project]
+
+Purpose of the site
+
+Tools used: Webflow, CMS, Interactions
+
+What you’re proud of: Animation, responsiveness, performance
+
+Link: [project link]
+
+12. Q: Have you worked on eCommerce or blog sites with Webflow CMS?
+A: Yes. For blogs, I use CMS collections for categories, authors, and posts. For eCommerce, I use Webflow Ecommerce or integrate with Shopify via custom embed (if needed).
+
+13. Q: How do you handle handoff or client training?
+A: I create a Loom video or live session to walk through how they can edit content in Webflow Editor. I also provide a short PDF guide with screenshots if needed.
