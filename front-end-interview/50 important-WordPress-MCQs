@@ -214,3 +214,76 @@ B) JetEngine Core
 C) JetTricks
 D) JetThemeCore
 ✅ Answer: A
+
+--
+
+✅ WooCommerce & LMS (31–40)
+WooCommerce is mainly used for:
+A) Blogs
+B) eCommerce
+C) Portfolios
+D) Forums
+✅ Answer: B
+
+Which product type allows multiple variations?
+A) Simple
+B) Grouped
+C) Variable
+D) External
+✅ Answer: C
+
+What does SKU stand for?
+A) Store Keep Unit
+B) Stock Keeping Unit
+C) Simple Key Utility
+D) System Kit Utility
+✅ Answer: B
+
+What file handles WooCommerce templates in themes?
+A) woocommerce.php
+B) archive-product.php
+C) shop.php
+D) index.php
+✅ Answer: B
+
+Which plugin adds online course functionality in WordPress?
+A) JetLMS
+B) Tutor LMS
+C) JetForm
+D) WP Secure
+✅ Answer: B
+
+Which is NOT a payment method in WooCommerce by default?
+A) Cash on Delivery
+B) Bank Transfer
+C) PayPal
+D) Stripe
+✅ Answer: D
+
+WooCommerce product categories are:
+A) Custom taxonomies
+B) Pages
+C) Post types
+D) Custom widgets
+✅ Answer: A
+
+Can Elementor edit WooCommerce product templates?
+A) No
+B) Yes, with Elementor Pro
+C) Only with Divi
+D) Only via FTP
+✅ Answer: B
+
+To manage courses, lessons, and quizzes, you use:
+A) JetEngine
+B) Elementor
+C) LMS plugin
+D) WooCommerce
+✅ Answer: C
+
+WooCommerce emails can be customized from:
+A) Theme Customizer
+B) Plugin Settings
+C) WooCommerce > Emails
+D) Elementor
+✅ Answer: C
