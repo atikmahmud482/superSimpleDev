@@ -287,3 +287,76 @@ B) Plugin Settings
 C) WooCommerce > Emails
 D) Elementor
 ✅ Answer: C
+
+--
+
+✅ HTML, CSS, JS, PHP (41–50)
+Which tag creates a hyperlink in HTML?
+A) <link>
+B) <url>
+C) <a>
+D) <h>
+✅ Answer: C
+
+CSS property to make text bold?
+A) font-weight: bold;
+B) text-style: strong;
+C) bold: true;
+D) weight: 800;
+✅ Answer: A
+
+JavaScript is used to:
+A) Style the page
+B) Structure the content
+C) Add interactivity
+D) Manage databases
+✅ Answer: C
+
+Which PHP function retrieves custom field values?
+A) get_custom()
+B) get_post_meta()
+C) the_meta()
+D) get_meta_value()
+✅ Answer: B
+
+Which PHP function includes another file?
+A) require
+B) echo
+C) return
+D) trigger
+✅ Answer: A
+
+What does === check in JavaScript?
+A) Value
+B) Value and type
+C) Variable
+D) Function
+✅ Answer: B
+
+CSS Flexbox uses which property?
+A) float
+B) display: flex;
+C) grid-template
+D) position: absolute;
+✅ Answer: B
+
+To enqueue a stylesheet in WordPress, use:
+A) wp_add_style()
+B) enqueue_style()
+C) wp_enqueue_style()
+D) style_add()
+✅ Answer: C
+
+JavaScript file should be loaded using:
+A) script.js
+B) wp_enqueue_script()
+C) load_script()
+D) add_script()
+✅ Answer: B
+
+HTML tag to create a form:
+A) <input>
+B) <submit>
+C) <form>
+D) <div>
+✅ Answer: C
