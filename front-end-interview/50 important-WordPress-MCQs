@@ -1,0 +1,70 @@
+✅ WordPress Core (1–10)
+Which file is required to make a WordPress theme valid?
+A) index.php
+B) header.php
+C) style.css
+D) page.php
+✅ Answer: C
+
+Which of the following is NOT a default post type in WordPress?
+A) Page
+B) Post
+C) Product
+D) Attachment
+✅ Answer: C
+
+Which function is used to load the header template?
+A) get_template_part()
+B) get_header()
+C) wp_header()
+D) include_header()
+✅ Answer: B
+
+Where are plugins stored in a WordPress installation?
+A) /wp-content/plugins/
+B) /wp-plugins/
+C) /wp-includes/plugins/
+D) /wp-plugins-folder/
+✅ Answer: A
+
+What is the default table prefix used by WordPress?
+A) wp*
+B) wp-db-
+C) wpdb*
+D) wp_1
+✅ Answer: A
+
+Which file handles 404 errors in WordPress?
+A) error.php
+B) 404.php
+C) notfound.php
+D) fallback.php
+✅ Answer: B
+
+What is the Loop in WordPress?
+A) A JavaScript event
+B) A PHP function to include scripts
+C) The main method for displaying posts
+D) A caching system
+✅ Answer: C
+
+Which function is used to add custom menus?
+A) add_menu()
+B) register_menu()
+C) register_nav_menus()
+D) nav_add()
+✅ Answer: C
+
+What is a shortcode in WordPress?
+A) A type of CSS
+B) A short JavaScript function
+C) A placeholder for dynamic content
+D) An error code
+✅ Answer: C
+
+Which file controls the structure of the homepage?
+A) home.php
+B) index.php
+C) page.php
+D) front-page.php
+✅ Answer: D
