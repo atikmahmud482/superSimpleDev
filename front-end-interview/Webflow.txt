@@ -1,0 +1,33 @@
+✅ Technical Questions & Answers (Webflow + Frontend)
+1. Q: What is Webflow and why do you prefer it?
+A: Webflow is a visual development tool that allows building responsive websites using HTML, CSS, and JavaScript — without writing code directly. I prefer it because it gives pixel-perfect control, dynamic CMS, and clean code export. It also speeds up development and allows for quick client feedback.
+
+2. Q: How do you handle responsive design in Webflow?
+A: I use Webflow’s built-in responsive breakpoints (desktop, tablet, mobile landscape & portrait). I ensure layouts use Flexbox or Grid for flexibility, use relative units (%, em, rem), and test on multiple devices.
+
+3. Q: Explain the difference between a Collection and a Static Page in Webflow.
+A: Static Pages are designed individually, while Collection Pages are dynamic templates powered by CMS content. For example, a blog post page pulls data from the “Blog” collection.
+
+4. Q: How do you optimize a Webflow site for performance?
+A:
+
+Compress images before upload
+
+Use WebP or SVG when possible
+
+Enable lazy loading
+
+Minimize interactions & animations
+
+Reduce unused styles and scripts
+
+Use Webflow’s built-in SEO settings
+
+5. Q: Can you integrate custom code in Webflow?
+A: Yes. Webflow allows adding custom HTML, CSS, or JavaScript using the Embed element, page settings, or the project settings (Head/Footer). I use it for third-party scripts, animations, or advanced interactions.
+
+6. Q: How do you handle CMS-driven pages in Webflow?
+A: I create a Collection, set the necessary fields (title, image, slug, etc.), then design a Collection Page Template that dynamically populates with data. For custom layouts, I use conditional visibility and filters.
+
+7. Q: Have you used interactions and animations in Webflow?
+A: Yes. I use Webflow Interactions 2.0 to create animations like fade-ins, scroll effects, and hover states — ensuring performance-friendly and responsive transitions.
