@@ -17,3 +17,11 @@ Answer: A Promise represents an asynchronous operation that can be pending, reso
 
 6. What does map() do?
 Answer: map() creates a new array by applying a function to each element of an existing array.
+
+✅ React Questions (if applicable)
+7. What is a component in React?
+Answer: A component is a reusable piece of UI in React. It can be a function or class that returns JSX.
+
+8. What are hooks in React?
+Answer: Hooks (like useState, useEffect) let you use state and lifecycle features in functional components.
+
