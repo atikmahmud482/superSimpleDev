@@ -79,6 +79,18 @@ function Header() {
   return <h1>Title</h1>;
 }
 
+5. What is useState?
+A hook to manage state in a functional component:
+
+const [count, setCount] = useState(0);
+
+6. What is useEffect?
+A hook to run code when component mounts/updates:
+
+useEffect(() => {
+  // fetch or run code
+}, []);
+
 ✅ General Frontend Questions
 3. How do you make a website responsive?
 Answer: Using media queries, flexbox/grid, and relative units like %, em, rem.
