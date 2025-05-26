@@ -18,13 +18,13 @@ Answer: Flexbox is best for 1D layouts (row or column). Grid is better for 2D la
 
 ✅ JavaScript Questions
 4. What is the difference between == and ===?
-Answer: == checks value with type conversion; === checks value and type (strict equality).
+Answer: == checks value with type conversion; === checks value and type (strict equality). == loose, === strict equality.
 
 5. What is a Promise?
-Answer: A Promise represents an asynchronous operation that can be pending, resolved, or rejected.
+Answer: A Promise represents an asynchronous operation that can be pending, resolved, or rejected. Handles async (pending, resolved, rejected).
 
 6. What does map() do?
-Answer: map() creates a new array by applying a function to each element of an existing array.
+Answer: map() creates a new array by applying a function to each element of an existing array. Creates a new array from another.
 
 ✅ React Questions (if applicable)
 7. What is a component in React?
