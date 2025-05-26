@@ -17,32 +17,42 @@ Answer: The box model consists of content, padding, border, and margin. It defin
 Answer: Flexbox is best for 1D layouts (row or column). Grid is better for 2D layouts (rows and columns).
 
 ✅ JavaScript Questions
-4. What is the difference between == and ===?
+1. What is the difference between == and ===?
 Answer: == checks value with type conversion; === checks value and type (strict equality). == loose, === strict equality.
 
-5. What is a Promise?
+2. What is a Promise?
 Answer: A Promise represents an asynchronous operation that can be pending, resolved, or rejected. Handles async (pending, resolved, rejected).
 
-6. What does map() do?
+3. What does map() do?
 Answer: map() creates a new array by applying a function to each element of an existing array. Creates a new array from another.
 
+4
+ 1. What is let, const, and var?
+ let: block-scoped, can change
+ const: block-scoped, cannot change
+ var: function-scoped (avoid using)
+ 2. What are arrow functions?
+ const add = (a, b) => a + b;
+
+
+
 ✅ React Questions (if applicable)
-7. What is a component in React?
+1. What is a component in React?
 Answer: A component is a reusable piece of UI in React. It can be a function or class that returns JSX.
 
-8. What are hooks in React?
+2. What are hooks in React?
 Answer: Hooks (like useState, useEffect) let you use state and lifecycle features in functional components.
 
 ✅ General Frontend Questions
-9. How do you make a website responsive?
+3. How do you make a website responsive?
 Answer: Using media queries, flexbox/grid, and relative units like %, em, rem.
 
-10. How do you improve website performance?
+4. How do you improve website performance?
 Answer: Minify CSS/JS, lazy load images, optimize assets, use caching, reduce unnecessary re-renders.
 
 ✅ Behavioral Questions
-11. Why do you want this internship at CloudCore?
+1. Why do you want this internship at CloudCore?
 Answer: I want to grow as a frontend developer by working on real-world projects in a collaborative environment like CloudCore.
 
-12. Tell us about a challenge you faced in a project.
+2. Tell us about a challenge you faced in a project.
 Answer: In one project, a layout broke on mobile. I debugged using DevTools and fixed it with better use of flexbox and media queries.
