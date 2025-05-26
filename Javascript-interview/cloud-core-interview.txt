@@ -1,0 +1,19 @@
+✅ HTML/CSS Questions
+1. What is Semantic HTML?
+Answer: Semantic HTML uses tags that describe the content meaning (e.g., <header>, <footer>, <article>), improving readability and accessibility.
+
+2. What is the Box Model in CSS?
+Answer: The box model consists of content, padding, border, and margin. It defines how elements are spaced and sized.
+
+3. What’s the difference between Flexbox and Grid?
+Answer: Flexbox is best for 1D layouts (row or column). Grid is better for 2D layouts (rows and columns).
+
+✅ JavaScript Questions
+4. What is the difference between == and ===?
+Answer: == checks value with type conversion; === checks value and type (strict equality).
+
+5. What is a Promise?
+Answer: A Promise represents an asynchronous operation that can be pending, resolved, or rejected.
+
+6. What does map() do?
+Answer: map() creates a new array by applying a function to each element of an existing array.
