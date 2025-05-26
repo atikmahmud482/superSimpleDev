@@ -91,11 +91,26 @@ useEffect(() => {
   // fetch or run code
 }, []);
 
+7. Props vs State?
+Props: data passed into a component
+
+State: data inside a component that can change
+
+8. What is conditional rendering?
+Show content based on condition:
+
+{isLoggedIn ? <Logout /> : <Login />}
+
+9. How do you render a list in React?
+Using .map():
+
+items.map(item => <li key={item.id}>{item.name}</li>)
+
 ✅ General Frontend Questions
-3. How do you make a website responsive?
+1. How do you make a website responsive?
 Answer: Using media queries, flexbox/grid, and relative units like %, em, rem.
 
-4. How do you improve website performance?
+2. How do you improve website performance?
 Answer: Minify CSS/JS, lazy load images, optimize assets, use caching, reduce unnecessary re-renders.
 
 ✅ Behavioral Questions
