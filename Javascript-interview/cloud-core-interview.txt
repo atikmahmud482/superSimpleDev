@@ -34,6 +34,30 @@ Answer: map() creates a new array by applying a function to each element of an e
  2. What are arrow functions?
  const add = (a, b) => a + b;
 
+5. What is the DOM?
+The Document Object Model — it represents the HTML structure so JavaScript can interact with it.
+
+6. How does addEventListener() work?
+button.addEventListener('click', () => { ... });
+
+7. Difference between null and undefined?
+null: assigned value = "nothing"
+undefined: variable declared but not assigned
+
+8. What is a callback function?
+A function passed into another function to run later.
+
+9. What is async/await?
+Used to handle promises more cleanly:
+
+const fetchData = async () => {
+  const res = await fetch(url);
+};
+
+10. What is hoisting?
+JavaScript moves declarations to the top.
+E.g., var is hoisted, but let and const are not.
+
 
 
 ✅ React Questions (if applicable)
