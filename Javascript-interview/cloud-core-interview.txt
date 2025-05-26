@@ -67,6 +67,18 @@ Answer: A component is a reusable piece of UI in React. It can be a function or 
 2. What are hooks in React?
 Answer: Hooks (like useState, useEffect) let you use state and lifecycle features in functional components.
 
+3. What is JSX?
+JSX lets you write HTML inside JavaScript:
+
+return <h1>Hello</h1>;
+
+4. What is a component?
+A reusable block that returns JSX (UI).
+Example:
+function Header() {
+  return <h1>Title</h1>;
+}
+
 ✅ General Frontend Questions
 3. How do you make a website responsive?
 Answer: Using media queries, flexbox/grid, and relative units like %, em, rem.
