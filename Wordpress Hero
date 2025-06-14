@@ -41,3 +41,13 @@ Build and push to GitHub:
 [ ] Client Dashboard Plugin (with admin settings page)
 
 [ ] WooCommerce Add-on Plugin
+
+🧠 Extra (Optional) for Power Developers
+
+✅ Learn WP-CLI (command-line WordPress management)
+
+✅ Learn Composer + Autoloading for plugin architecture
+
+✅ Learn Security best practices (sanitization, nonce, etc.)
+
+✅ Learn WordPress Coding Standards (WPCS)
