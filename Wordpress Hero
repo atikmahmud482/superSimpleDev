@@ -14,3 +14,15 @@ Skill	Why Important
 🧠 Hooks (Actions & Filters)	Modify WordPress behavior without editing core
 🔐 User Roles & Permissions	Build secure dashboards, memberships
 🌍 Multilingual & Multisite Setup	Create global or multi-brand WordPress sites
+🔸 Phase 2: Modern Frontend with WordPress
+
+Make your themes faster, dynamic, and professional.
+
+Skill	Description
+
+⚡ Tailwind CSS or Bootstrap	Modern UI frameworks to style faster
+⚛️ React + REST API	Create headless WordPress with React
+🔄 AJAX in WordPress	Load data without reloading the page
+🔐 JWT Auth / WP REST Security	Secure headless apps
+📲 Responsive Design Best Practices	Build mobile-friendly sites
+🧑‍🎨 Figma to WordPress Workflow	Convert real client UI designs
