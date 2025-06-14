@@ -26,3 +26,18 @@ Skill	Description
 🔐 JWT Auth / WP REST Security	Secure headless apps
 📲 Responsive Design Best Practices	Build mobile-friendly sites
 🧑‍🎨 Figma to WordPress Workflow	Convert real client UI designs
+🔸 Phase 3: Real-World Projects & Portfolio Ideas
+
+Build and push to GitHub:
+
+[ ] Portfolio Website (with Custom Post Type)
+
+[ ] Blog Site (with pagination, category filters)
+
+[ ] Product Catalog Plugin
+
+[ ] Custom Theme from a Figma Design
+
+[ ] Client Dashboard Plugin (with admin settings page)
+
+[ ] WooCommerce Add-on Plugin
