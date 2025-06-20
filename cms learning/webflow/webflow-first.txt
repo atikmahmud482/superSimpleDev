@@ -4,3 +4,13 @@ Include a markdown file like WEBFLOW_LEARNING.md listing:
 Topics you're learning (layout, CMS, interactions, etc.)
 
 Useful resources (tutorials, YouTube, articles)
+
+✅ 2. feat: exported and added my first Webflow landing page
+Export your Webflow project as code (HTML/CSS/JS) and push it to GitHub.
+
+Structure it as a normal frontend project:
+/project-name
+  /images
+  index.html
+  style.css
+  script.js
