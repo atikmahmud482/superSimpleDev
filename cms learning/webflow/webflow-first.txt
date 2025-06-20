@@ -23,3 +23,9 @@ What you learned
 Preview link (Webflow share or Netlify/Vercel deploy)
 Screenshot of the design
 
+✅ 4. feat: custom CSS tweaks added to exported Webflow design
+Edit the exported CSS to show you can go beyond Webflow:
+
+Add hover effects
+Adjust responsiveness
+Fix any issues in exported code
