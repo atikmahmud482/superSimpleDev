@@ -35,3 +35,9 @@ Push a project that uses Webflow CMS collections.
 
 Include a description in the README explaining how CMS was used.
 Add screenshots of the CMS config.
+
+✅ 6. chore: added .gitignore and optimized exported code files
+Clean up your Webflow exported code:
+Remove unused classes
+Add .gitignore to avoid uploading unwanted files
+
