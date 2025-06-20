@@ -14,3 +14,12 @@ Structure it as a normal frontend project:
   index.html
   style.css
   script.js
+
+  ✅ 3. docs: added project README with preview link and screenshots
+Add a README.md file describing the project.
+
+What it does
+What you learned
+Preview link (Webflow share or Netlify/Vercel deploy)
+Screenshot of the design
+
