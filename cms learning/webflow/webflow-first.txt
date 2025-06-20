@@ -29,3 +29,9 @@ Edit the exported CSS to show you can go beyond Webflow:
 Add hover effects
 Adjust responsiveness
 Fix any issues in exported code
+
+✅ 5. feat: integrated CMS collection example from Webflow
+Push a project that uses Webflow CMS collections.
+
+Include a description in the README explaining how CMS was used.
+Add screenshots of the CMS config.
