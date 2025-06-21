@@ -68,3 +68,17 @@ if (score >= 90) {
 } else {
   console.log("Grade: Below A");
 }
+
+// 🔹 switch statement:
+let color = "blue";
+
+switch (color) {
+  case "red":
+    console.log("Color is Red");
+    break;
+  case "blue":
+    console.log("Color is Blue");
+    break;
+  default:
+    console.log("Color not recognized");
+}
