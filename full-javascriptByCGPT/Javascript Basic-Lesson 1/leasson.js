@@ -46,3 +46,25 @@ let isAdmin = false;
 console.log(isLoggedIn && isAdmin); // false
 console.log(isLoggedIn || isAdmin); // true
 console.log(!isLoggedIn); // false
+
+/* ✅ 2. Conditionals (if, else, else if, switch) */
+
+// 🔹 Basic if/else:
+let age = 20;
+
+if (age >= 18) {
+  console.log("✅ You are an adult.");
+} else {
+  console.log("❌ You are a minor.");
+}
+
+// 🔹 else if:
+let score = 85;
+
+if (score >= 90) {
+  console.log("Grade: A+");
+} else if (score >= 80) {
+  console.log("Grade: A");
+} else {
+  console.log("Grade: Below A");
+}
