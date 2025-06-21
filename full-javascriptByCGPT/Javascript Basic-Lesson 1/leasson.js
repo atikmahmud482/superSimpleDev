@@ -31,3 +31,10 @@ console.log(x - y); // 7
 console.log(x * y); // 30
 console.log(x / y); // 3.33
 console.log(x % y); // 1 (remainder)
+
+// 🔸 Comparison Operators:
+console.log(x > y); // true
+console.log(x < y); // false
+console.log(x == 10); // true (value match)
+console.log(x === "10"); // false (type + value)
+console.log(x != y); // true
