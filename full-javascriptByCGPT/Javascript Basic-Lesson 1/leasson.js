@@ -38,3 +38,11 @@ console.log(x < y); // false
 console.log(x == 10); // true (value match)
 console.log(x === "10"); // false (type + value)
 console.log(x != y); // true
+
+// 🔸 Logical Operators:
+let isLoggedIn = true;
+let isAdmin = false;
+
+console.log(isLoggedIn && isAdmin); // false
+console.log(isLoggedIn || isAdmin); // true
+console.log(!isLoggedIn); // false
