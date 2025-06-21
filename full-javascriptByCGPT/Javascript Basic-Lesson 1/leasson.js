@@ -18,3 +18,16 @@ console.log("🎂 Age:", myAge);
 console.log("📘 Learning JS:", isLearningJavaScript);
 console.log("❤️ Favorite Things:", favoriteThings);
 console.log("📄 Profile Object:", myProfile);
+
+/* 🧪 JavaScript Lesson 2: Operators & Conditionals */
+/* ✅ 1. JavaScript Operators
+Operators let you compare, assign, and do math with variables. */
+// 🔸 Arithmetic Operators:
+let x = 10;
+let y = 3;
+
+console.log(x + y); // 13
+console.log(x - y); // 7
+console.log(x * y); // 30
+console.log(x / y); // 3.33
+console.log(x % y); // 1 (remainder)
