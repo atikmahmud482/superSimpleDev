@@ -119,3 +119,10 @@ while (i < 3) {
   console.log("While loop: " + i);
   i++;
 }
+
+// 🔹 Loop through an array:
+let fruits = ["apple", "banana", "mango"];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log("I like " + fruits[i]);
+}
