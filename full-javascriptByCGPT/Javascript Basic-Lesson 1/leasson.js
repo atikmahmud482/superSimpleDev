@@ -112,3 +112,10 @@ Loops let you repeat actions without rewriting code. */
 for (let i = 1; i <= 5; i++) {
   console.log("Loop count: " + i);
 }
+
+// 🔹 while loop:
+let i = 0;
+while (i < 3) {
+  console.log("While loop: " + i);
+  i++;
+}
