@@ -126,3 +126,8 @@ let fruits = ["apple", "banana", "mango"];
 for (let i = 0; i < fruits.length; i++) {
   console.log("I like " + fruits[i]);
 }
+
+// 🔹 for...of loop:
+for (let fruit of fruits) {
+  console.log("Fruit: " + fruit);
+}
