@@ -92,3 +92,15 @@ function greet(name) {
 }
 
 greet("Atik"); // Output: Hello, Atik!
+
+// 🔹 Function with Return:
+function add(a, b) {
+  return a + b;
+}
+
+let sum = add(5, 3);
+console.log(sum); // 8
+
+// 🔹 Arrow Function (ES6):
+const multiply = (x, y) => x * y;
+console.log(multiply(4, 2)); // 8
