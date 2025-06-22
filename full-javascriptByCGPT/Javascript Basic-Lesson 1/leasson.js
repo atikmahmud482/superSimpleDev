@@ -82,3 +82,13 @@ switch (color) {
   default:
     console.log("Color not recognized");
 }
+
+/* ✅ 1. Functions
+Functions let you reuse code. You define it once, then call it whenever needed. */
+
+// 🔹 Function Declaration:
+function greet(name) {
+  console.log("Hello, " + name + "!");
+}
+
+greet("Atik"); // Output: Hello, Atik!
