@@ -104,3 +104,11 @@ console.log(sum); // 8
 // 🔹 Arrow Function (ES6):
 const multiply = (x, y) => x * y;
 console.log(multiply(4, 2)); // 8
+
+/* ✅ 2. Loops
+Loops let you repeat actions without rewriting code. */
+
+// 🔹 for loop:
+for (let i = 1; i <= 5; i++) {
+  console.log("Loop count: " + i);
+}
