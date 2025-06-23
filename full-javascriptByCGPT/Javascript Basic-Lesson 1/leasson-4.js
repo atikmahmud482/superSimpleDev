@@ -17,3 +17,8 @@ const button = document.getElementById("changeBtn");
 document.querySelector("h1"); // First <h1>
 document.querySelector(".myClass"); // First element with class
 document.querySelectorAll(".myClass"); // All elements with class
+
+// ✅ 3. Changing Content or Style
+greeting.textContent = "Welcome, Atik!";
+greeting.style.color = "green";
+greeting.style.fontSize = "24px";
