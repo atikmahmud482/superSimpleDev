@@ -9,3 +9,11 @@ Change their content, style, or attributes
 Respond to user actions (clicks, typing, etc.)
 
  */
+// JS
+const greeting = document.getElementById("greeting");
+const button = document.getElementById("changeBtn");
+
+// Other selectors:
+document.querySelector("h1"); // First <h1>
+document.querySelector(".myClass"); // First element with class
+document.querySelectorAll(".myClass"); // All elements with class
