@@ -22,3 +22,8 @@ document.querySelectorAll(".myClass"); // All elements with class
 greeting.textContent = "Welcome, Atik!";
 greeting.style.color = "green";
 greeting.style.fontSize = "24px";
+
+// ✅ 4. Handling Events
+button.addEventListener("click", () => {
+  greeting.textContent = "You clicked the button!";
+});
