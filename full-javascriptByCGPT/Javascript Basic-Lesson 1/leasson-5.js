@@ -36,3 +36,10 @@ console.log(users[1].role); // "Backend"
 skills.forEach((skill) => {
   console.log("Skill:", skill);
 });
+
+// 🔹 map() – return a new array
+let upperSkills = skills.map((skill) => skill.toUpperCase());
+console.log(upperSkills); // ["HTML", "CSS", "JAVASCRIPT", "TAILWIND"]
+// 🔹 filter() – return only matching items
+let longSkills = skills.filter((skill) => skill.length > 4);
+console.log(longSkills); // ["HTML", "JavaScript", "Tailwind"]
