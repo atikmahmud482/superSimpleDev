@@ -21,3 +21,12 @@ console.log(user["age"]); // 25
 // You can also update or add values:
 user.age = 26;
 user.country = "Bangladesh";
+
+// ✅ 3. Array of Objects (Common in real apps)
+let users = [
+  { name: "Atik", role: "Frontend" },
+  { name: "Sami", role: "Backend" },
+  { name: "Mira", role: "Designer" },
+];
+
+console.log(users[1].role); // "Backend"
