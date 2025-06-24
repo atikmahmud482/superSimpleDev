@@ -30,3 +30,9 @@ let users = [
 ];
 
 console.log(users[1].role); // "Backend"
+
+/* ✅ 4. Useful Array Methods
+🔹 forEach() – loop through all items */
+skills.forEach((skill) => {
+  console.log("Skill:", skill);
+});
