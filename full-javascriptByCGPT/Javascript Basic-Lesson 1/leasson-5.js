@@ -43,3 +43,10 @@ console.log(upperSkills); // ["HTML", "CSS", "JAVASCRIPT", "TAILWIND"]
 // 🔹 filter() – return only matching items
 let longSkills = skills.filter((skill) => skill.length > 4);
 console.log(longSkills); // ["HTML", "JavaScript", "Tailwind"]
+
+// 🔹 find() – return the first match
+let found = skills.find((skill) => skill === "CSS");
+console.log(found); // "CSS"
+// 🔹 push() / pop() – add/remove from end
+skills.push("React");
+skills.pop();
