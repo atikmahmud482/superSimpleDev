@@ -15,3 +15,16 @@ fetch("https://jsonplaceholder.typicode.com/users")
 /* fetch() sends a request
 .then() handles the result
 .catch() handles any error */
+
+// ✅ 3. Using async/await (cleaner way)
+async function getUsers() {
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    const users = await res.json();
+    console.log("Users:", users);
+  } catch (err) {
+    console.log("❌ Error fetching users:", err);
+  }
+}
+
+getUsers();
