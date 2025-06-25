@@ -28,3 +28,22 @@ async function getUsers() {
 }
 
 getUsers();
+
+// ✅ 4. Display Fetched Data in HTML
+
+<ul id="userList"></ul>;
+
+async function displayUsers() {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const users = await res.json();
+
+  const list = document.getElementById("userList");
+
+  users.forEach((user) => {
+    const li = document.createElement("li");
+    li.textContent = `${user.name} (${user.email})`;
+    list.appendChild(li);
+  });
+}
+
+displayUsers();
