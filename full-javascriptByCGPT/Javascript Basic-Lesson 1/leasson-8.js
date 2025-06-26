@@ -34,3 +34,23 @@ class Calculator {
 const calc = new Calculator();
 console.log(calc.add(2, 3)); // 5
 console.log(calc.multiply(4, 5)); // 20
+
+// ✅ 4. Inheritance (Extending another class)
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    console.log(`${this.name} barks.`);
+  }
+}
+
+const dog = new Dog("Tommy");
+dog.speak(); // Tommy barks.
