@@ -18,3 +18,19 @@ class Person {
 
 const atik = new Person("Atik", 25);
 atik.greet(); // Hello, my name is Atik.
+
+// ✅ 3. Adding Methods
+// You can add multiple methods inside the class:
+class Calculator {
+  add(a, b) {
+    return a + b;
+  }
+
+  multiply(a, b) {
+    return a * b;
+  }
+}
+
+const calc = new Calculator();
+console.log(calc.add(2, 3)); // 5
+console.log(calc.multiply(4, 5)); // 20
