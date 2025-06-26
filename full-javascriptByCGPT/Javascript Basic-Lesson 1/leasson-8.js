@@ -54,3 +54,24 @@ class Dog extends Animal {
 
 const dog = new Dog("Tommy");
 dog.speak(); // Tommy barks.
+
+// ✅ 5. super() in constructor
+class Vehicle {
+  constructor(type) {
+    this.type = type;
+  }
+}
+
+class Car extends Vehicle {
+  constructor(type, brand) {
+    super(type); // calls Vehicle constructor
+    this.brand = brand;
+  }
+
+  info() {
+    console.log(`${this.brand} is a ${this.type}`);
+  }
+}
+
+const car = new Car("sedan", "Toyota");
+car.info(); // Toyota is a sedan
