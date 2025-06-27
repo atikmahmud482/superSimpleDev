@@ -29,3 +29,23 @@ const button = document.getElementById("searchBtn");
 const results = document.getElementById("results");
 
 const API_KEY = "8ba1e4d8"; // Replace with your own if needed
+button.addEventListener("click", async () => {
+  const query = input.value.trim();
+
+  if (!query) {
+    results.innerHTML = "<p>Please enter a movie name.</p>";
+    return;
+  }
+
+  results.innerHTML = "<p>Loading...</p>";
+
+  try {
+    const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`);
+    const data = await res.json();
+
+    if (data.Response === "True") {
+      results.innerHTML = ""; // clear previous
+
+      data.Search.forEach(movie => {
+        const div = document.createElement("div");
+        div.classList.add("movie");
