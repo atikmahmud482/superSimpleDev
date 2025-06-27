@@ -11,3 +11,11 @@
 // Loading state (optional)
 
 // Responsive design (optional bonus)
+
+/* ✅ 1. Project Overview
+You’ll build a Movie Search App using the OMDb API.
+Users will enter a movie name → fetch results → display poster, title, year.
+
+🧰 API Info (Free to use)
+URL: https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=movieName
+🔑 Get your free API key here: https://www.omdbapi.com/apikey.aspx */
