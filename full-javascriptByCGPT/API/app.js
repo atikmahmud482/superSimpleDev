@@ -18,4 +18,8 @@ Users will enter a movie name → fetch results → display poster, title, year.
 
 🧰 API Info (Free to use)
 URL: https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=movieName
-🔑 Get your free API key here: https://www.omdbapi.com/apikey.aspx */
+🔑 Get your free API key here: https://www.omdbapi.com/apikey.aspx
+
+You can start with this demo key (for testing): 
+apikey=8ba1e4d8
+*/
