@@ -23,3 +23,9 @@ URL: https://www.omdbapi.com/?apikey=YOUR_API_KEY&s=movieName
 You can start with this demo key (for testing): 
 apikey=8ba1e4d8
 */
+
+const input = document.getElementById("searchInput");
+const button = document.getElementById("searchBtn");
+const results = document.getElementById("results");
+
+const API_KEY = "8ba1e4d8"; // Replace with your own if needed
