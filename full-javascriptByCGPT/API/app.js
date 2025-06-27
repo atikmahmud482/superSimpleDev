@@ -40,12 +40,42 @@ button.addEventListener("click", async () => {
   results.innerHTML = "<p>Loading...</p>";
 
   try {
-    const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`);
+    const res = await fetch(
+      `https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`
+    );
     const data = await res.json();
 
     if (data.Response === "True") {
       results.innerHTML = ""; // clear previous
 
-      data.Search.forEach(movie => {
+      data.Search.forEach((movie) => {
         const div = document.createElement("div");
         div.classList.add("movie");
+        div.innerHTML = `
+          <img src="${
+            movie.Poster !== "N/A"
+              ? movie.Poster
+              : "https://via.placeholder.com/100"
+          }">
+          <div>
+            <h3>${movie.Title}</h3>
+            <p>Year: ${movie.Year}</p>
+          </div>
+        `;
+        results.appendChild(div);
+      });
+    } else {
+      results.innerHTML = `<p>No results found for "${query}".</p>`;
+    }
+  } catch (err) {
+    results.innerHTML = "<p>Error fetching data. Please try again later.</p>";
+    console.error(err);
+  }
+});
+
+/* ✅ Project Complete!
+You now have:
+✅ API fetching
+✅ DOM rendering
+✅ Dynamic UI interaction
+✅ Real data app */
