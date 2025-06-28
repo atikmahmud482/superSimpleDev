@@ -8,3 +8,11 @@ Loops	for, while, for...of	Repeat tasks, render items
 Functions	Declare, return, arrow functions	Reusable code blocks
 DOM Manipulation	getElementById, textContent, style	Change webpage content
 Events	click, keyup, submit, addEventListener()	Respond to user actions
+📁 You built:
+
+Basic greeting page
+
+Input field with dynamic output
+
+Conditional grading system
+
