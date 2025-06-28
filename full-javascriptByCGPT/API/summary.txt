@@ -1,0 +1,10 @@
+✅ Phase 1: Basics
+Topic	Key Concepts	Use Case
+Variables	let, const, var	Store values
+Data Types	String, Number, Boolean, Array, Object	Form data, profile info
+Operators	+, -, ==, ===, &&, `	
+Conditionals	if, else, switch	Make decisions in code
+Loops	for, while, for...of	Repeat tasks, render items
+Functions	Declare, return, arrow functions	Reusable code blocks
+DOM Manipulation	getElementById, textContent, style	Change webpage content
+Events	click, keyup, submit, addEventListener()	Respond to user actions
