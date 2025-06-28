@@ -38,3 +38,10 @@ fetch API	fetch(), .then(), .catch()	Get data from external APIs
 async/await	Cleaner async code	Loading real-time info
 Error Handling	try...catch	Gracefully manage issues
 OOP	class, constructor, extends, super()	Blueprint for objects, reusable structures
+📁 You built:
+
+API-powered movie search app
+
+Custom class (Student, Developer)
+
+API fetch with dynamic DOM rendering
