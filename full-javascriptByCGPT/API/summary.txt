@@ -31,3 +31,10 @@ Skill list app using array
 User object with personal info
 
 Note app saved in localStorage
+
+✅ Phase 3: Advanced
+Topic	Key Concepts	Use Case
+fetch API	fetch(), .then(), .catch()	Get data from external APIs
+async/await	Cleaner async code	Loading real-time info
+Error Handling	try...catch	Gracefully manage issues
+OOP	class, constructor, extends, super()	Blueprint for objects, reusable structures
