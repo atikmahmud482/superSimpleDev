@@ -24,3 +24,10 @@ Array Methods	map, filter, forEach, find	Transform, filter, loop data
 Form Handling	value, validation	Login, signup forms
 Local Storage	setItem, getItem	Save data across reloads
 Modules	export, import	Organize code across files
+📁 You built:
+
+Skill list app using array
+
+User object with personal info
+
+Note app saved in localStorage
