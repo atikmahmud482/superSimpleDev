@@ -16,3 +16,11 @@ Input field with dynamic output
 
 Conditional grading system
 
+✅ Phase 2: Intermediate
+Topic	Key Concepts	Use Case
+Arrays	push, pop, length	Lists like skills, tools
+Objects	Key–value pairs	User profile, data model
+Array Methods	map, filter, forEach, find	Transform, filter, loop data
+Form Handling	value, validation	Login, signup forms
+Local Storage	setItem, getItem	Save data across reloads
+Modules	export, import	Organize code across files
