@@ -24,3 +24,8 @@ Topic	What You’ll Learn
 📦 Props Drilling	Passing data deeply
 💾 Local Storage	Save user data
 🔐 Conditional UI	Show/hide things like login
+
+✅ Phase 3: React Advanced
+Topic	What You’ll Learn
+📁 Custom Hooks	Reusable logic
+🧱 Context API	Global state (like Redux lite)
