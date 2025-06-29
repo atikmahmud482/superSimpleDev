@@ -7,3 +7,9 @@ Topic	What You’ll Learn
 ⚙️ Setting Up	Create React App / Vite
 🧱 JSX	Writing HTML inside JS
 📌 Components	Reusable UI blocks (function-based)
+📤 Props	Pass data to components
+🧠 State	Dynamic data inside a component
+💥 Events	Handling user actions like click, input
+🔁 Conditional Render	if, &&, ? :
+📚 Lists & Keys	Render dynamic arrays with .map()
+🧩 useState Hook	Manage and update state
