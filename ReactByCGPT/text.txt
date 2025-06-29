@@ -1,0 +1,9 @@
+🚀 React.js Learning Roadmap (Beginner Friendly)
+We’ll go from zero to building real apps.
+
+✅ Phase 1: React Basics
+Topic	What You’ll Learn
+📦 What is React?	Why we use it & how it works
+⚙️ Setting Up	Create React App / Vite
+🧱 JSX	Writing HTML inside JS
+📌 Components	Reusable UI blocks (function-based)
