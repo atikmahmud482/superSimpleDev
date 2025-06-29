@@ -13,3 +13,11 @@ Topic	What You’ll Learn
 🔁 Conditional Render	if, &&, ? :
 📚 Lists & Keys	Render dynamic arrays with .map()
 🧩 useState Hook	Manage and update state
+
+✅ Phase 2: React Intermediate
+Topic	What You’ll Learn
+📂 Folder Structure	Organize real projects
+🎣 useEffect Hook	Handle side effects (API calls)
+📡 Fetch API in React	Load data from a server
+✅ Form Handling	Controlled inputs
+🗃️ Lifting State Up	Share data between components
