@@ -29,3 +29,6 @@ Topic	What You’ll Learn
 Topic	What You’ll Learn
 📁 Custom Hooks	Reusable logic
 🧱 Context API	Global state (like Redux lite)
+📃 Routing	Switch between pages using react-router
+🎨 Styled Components / Tailwind	Style React components
+🧪 Project Deployment	Vercel / Netlify hosting
