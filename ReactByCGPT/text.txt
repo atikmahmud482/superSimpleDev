@@ -21,3 +21,6 @@ Topic	What You’ll Learn
 📡 Fetch API in React	Load data from a server
 ✅ Form Handling	Controlled inputs
 🗃️ Lifting State Up	Share data between components
+📦 Props Drilling	Passing data deeply
+💾 Local Storage	Save user data
+🔐 Conditional UI	Show/hide things like login
