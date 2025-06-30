@@ -17,3 +17,10 @@ npm run dev
 
 Your browser will open at:
 http://localhost:5173 — showing a default Vite + React app.
+
+✅ Step 3: Clean the Project (Optional)
+Delete these files inside src/:
+
+App.css
+assets/
+Clear the content inside App.jsx and main.jsx
