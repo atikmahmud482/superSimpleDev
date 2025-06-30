@@ -1,11 +1,19 @@
 🧪 React Lesson 1: Setup + First Component
 ✅ Step 1: Prerequisites
 Make sure you have installed:
-
 ✅ Node.js
-
 ✅ VS Code
-
 ✅ Basic terminal knowledge
-
 Let’s use Vite (it's modern and faster than Create React App).
+
+✅ Step 2: Create a React Project with Vite
+Open your terminal and run: 
+
+npm create vite@latest my-react-app -- --template react
+Now:
+cd my-react-app
+npm install
+npm run dev
+
+Your browser will open at:
+http://localhost:5173 — showing a default Vite + React app.
