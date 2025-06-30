@@ -50,3 +50,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 );
+
+✅ Step 5: Run It Again
+
+npm run dev
+You should see:
+Hello, Atik 👋
+Welcome to your first React app!
+
