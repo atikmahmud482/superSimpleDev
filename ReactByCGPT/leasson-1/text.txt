@@ -1,0 +1,11 @@
+🧪 React Lesson 1: Setup + First Component
+✅ Step 1: Prerequisites
+Make sure you have installed:
+
+✅ Node.js
+
+✅ VS Code
+
+✅ Basic terminal knowledge
+
+Let’s use Vite (it's modern and faster than Create React App).
