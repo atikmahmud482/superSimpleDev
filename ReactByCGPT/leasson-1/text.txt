@@ -97,3 +97,16 @@ function App() {
 }
 
 export default App;
+
+✅ Output:
+You’ll now see:
+
+Hello, Atik 👋
+Welcome to your first React app!
+-------------------------------
+Made with ❤️ by Atik
+🔁 Summary of What You Learned:
+Concept	Example
+Component	function Footer()
+Composition	<Footer /> inside <App />
+Import/Export	import Footer from './Footer'
