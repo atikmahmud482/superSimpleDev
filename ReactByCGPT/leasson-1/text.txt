@@ -149,3 +149,21 @@ function App() {
 }
 
 export default App;
+
+✅ Output:
+👋 Welcome, Atik Al Mahmud!
+Your role is: Frontend Developer
+React is awesome 💙
+Made with ❤️ by Atik
+🔄 Bonus: Destructure Props
+Instead of props.name, you can use destructuring:
+
+📁 Welcome.jsx
+function Welcome({ name, role }) {
+  return (
+    <div>
+      <h2>👋 Welcome, {name}!</h2>
+      <p>Your role is: {role}</p>
+    </div>
+  );
+}
