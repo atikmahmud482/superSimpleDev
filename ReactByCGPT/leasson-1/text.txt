@@ -130,3 +130,22 @@ function Welcome(props) {
 }
 
 export default Welcome;
+
+✅ Step 2: Use It in App.jsx
+📁 src/App.jsx
+
+import Welcome from './Welcome';
+import Footer from './Footer';
+
+function App() {
+  return (
+    <div>
+      <Welcome name="Atik Al Mahmud" role="Frontend Developer" />
+      
+      <h1>React is awesome 💙</h1>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
