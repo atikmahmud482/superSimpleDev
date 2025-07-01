@@ -110,3 +110,23 @@ Concept	Example
 Component	function Footer()
 Composition	<Footer /> inside <App />
 Import/Export	import Footer from './Footer'
+
+🧠 React Lesson 3: Props (Component Communication)
+✅ What Are Props?
+Props (short for properties) are how you pass data from parent to child components.
+
+Think of props like arguments you pass into a function.
+
+✅ Step 1: Create a Welcome.jsx Component
+📁 src/Welcome.jsx
+
+function Welcome(props) {
+  return (
+    <div>
+      <h2>👋 Welcome, {props.name}!</h2>
+      <p>Your role is: {props.role}</p>
+    </div>
+  );
+}
+
+export default Welcome;
