@@ -58,3 +58,23 @@ You should see:
 Hello, Atik 👋
 Welcome to your first React app!
 
+🧱 React Lesson 2: Components & Composition
+✅ What Is a Component?
+A component is a reusable block of UI.
+Each part of your app — like Header, Footer, Card, Button — can be a component.
+
+✅ Step 1: Create a New File
+Create a new file inside src/ folder:
+
+📁 src/Footer.jsx
+
+function Footer() {
+  return (
+    <footer style={{ marginTop: "30px", color: "gray" }}>
+      <hr />
+      <p>Made with ❤️ by Atik</p>
+    </footer>
+  );
+}
+
+export default Footer;
