@@ -78,3 +78,22 @@ function Footer() {
 }
 
 export default Footer;
+
+✅ Step 2: Use the Footer Component in App.jsx
+📁 src/App.jsx
+
+import Footer from './Footer'; // ⬅️ import the component
+
+function App() {
+  return (
+    <div>
+      <h1>Hello, Atik 👋</h1>
+      <p>Welcome to your first React app!</p>
+
+      {/* Use the component */}
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
