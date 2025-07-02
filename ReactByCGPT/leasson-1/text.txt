@@ -216,3 +216,22 @@ count → current value
 setCount() → function to update it
 
 useState(0) → starts at 0
+
+🧪 React Lesson 5: useEffect + API Fetch
+✅ What is useEffect?
+A React Hook that runs code after the component renders
+
+Perfect for:
+
+📡 Fetching API data
+
+🧼 Cleanup (event listeners, timers)
+
+⚙️ Side effects (DOM updates, localStorage, etc.)
+
+✅ Step 1: Basic Structure of useEffect
+import { useEffect } from "react";
+
+useEffect(() => {
+  // runs once after component is mounted
+}, []);
