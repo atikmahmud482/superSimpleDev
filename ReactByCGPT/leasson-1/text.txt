@@ -167,3 +167,9 @@ function Welcome({ name, role }) {
     </div>
   );
 }
+
+🧠 React Lesson 4: useState Hook
+✅ What Is State?
+State is data that a component can change over time — like input values, counters, toggles, loading indicators, etc.
+React gives us a hook called useState to manage this.
+
