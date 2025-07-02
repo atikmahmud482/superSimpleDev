@@ -173,3 +173,21 @@ function Welcome({ name, role }) {
 State is data that a component can change over time — like input values, counters, toggles, loading indicators, etc.
 React gives us a hook called useState to manage this.
 
+✅ Step 1: Simple Counter Example
+📁 src/Counter.jsx
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0); // initial value is 0
+
+  return (
+    <div>
+      <h2>Counter: {count}</h2>
+      <button onClick={() => setCount(count + 1)}>➕ Increase</button>
+      <button onClick={() => setCount(count - 1)}>➖ Decrease</button>
+      <button onClick={() => setCount(0)}>🔄 Reset</button>
+    </div>
+  );
+}
+
+export default Counter;
