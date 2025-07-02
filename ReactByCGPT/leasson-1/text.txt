@@ -191,3 +191,20 @@ function Counter() {
 }
 
 export default Counter;
+
+✅ Step 2: Use It in App.jsx
+import Counter from './Counter';
+import Footer from './Footer';
+import Welcome from './Welcome';
+
+function App() {
+  return (
+    <div>
+      <Welcome name="Atik Al Mahmud" role="Frontend Developer" />
+      <Counter />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
