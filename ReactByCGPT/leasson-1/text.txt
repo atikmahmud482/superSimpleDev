@@ -352,3 +352,27 @@ function InputBox({ name, setName }) {
 }
 
 export default InputBox;
+
+✅ Step 2: Create WelcomeText.jsx
+function WelcomeText({ name }) {
+  return <h2>Hello, {name || "Guest"} 👋</h2>;
+}
+
+export default WelcomeText;
+✅ Step 3: Parent Component: App.jsx
+import { useState } from "react";
+import InputBox from './InputBox';
+import WelcomeText from './WelcomeText';
+
+function App() {
+  const [name, setName] = useState("");
+
+  return (
+    <div>
+      <WelcomeText name={name} />
+      <InputBox name={name} setName={setName} />
+    </div>
+  );
+}
+
+export default App;
