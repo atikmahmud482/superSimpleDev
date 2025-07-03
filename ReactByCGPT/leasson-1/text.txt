@@ -315,3 +315,16 @@ function FormInput() {
 }
 
 export default FormInput;
+
+✅ Step 2: Use It in App.jsx
+import FormInput from './FormInput';
+
+function App() {
+  return (
+    <div>
+      <FormInput />
+    </div>
+  );
+}
+
+export default App;
