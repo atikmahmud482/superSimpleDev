@@ -328,3 +328,13 @@ function App() {
 }
 
 export default App;
+
+🧱 React Lesson 7: Lifting State Up
+✅ What is “Lifting State Up”?
+When two or more components need access to the same data, we move (or "lift") the state to their common parent.
+Then pass the data and update functions as props.
+
+🧑‍🏫 Real-World Example:
+App holds the main state
+InputBox sets the name
+WelcomeText shows the name
