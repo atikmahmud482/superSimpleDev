@@ -276,3 +276,10 @@ function App() {
     </div>
   );
 }
+
+🧪 React Lesson 6: Controlled Components (Forms)
+✅ What Is a Controlled Component?
+In React, form inputs are controlled by React state using useState().
+
+That means:
+What you type into an input box is synced with a variable in state.
