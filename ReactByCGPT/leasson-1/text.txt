@@ -376,3 +376,15 @@ function App() {
 }
 
 export default App;
+
+🧠 React Lesson 8: Context API — Sharing Global State
+✅ What is Context API?
+Context API lets you share data globally between components — without passing props manually through every level.
+
+Perfect for:
+Dark/light mode
+Auth info
+Theme / Language
+Cart items in ecommerce
+User profile across pages
+
