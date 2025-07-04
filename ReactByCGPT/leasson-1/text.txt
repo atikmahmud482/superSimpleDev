@@ -423,3 +423,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </UserProvider>
   </React.StrictMode>,
 );
+
+✅ Step 3: Use Context in Any Component
+📁 Welcome.jsx
+import { useContext } from "react";
+import { UserContext } from "./UserContext";
+
+function Welcome() {
+  const { user } = useContext(UserContext);
+  return <h2>Welcome, {user} 🎉</h2>;
+}
+
+export default Welcome;
