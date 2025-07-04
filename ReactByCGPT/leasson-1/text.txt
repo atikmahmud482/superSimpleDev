@@ -388,3 +388,23 @@ Theme / Language
 Cart items in ecommerce
 User profile across pages
 
+🧱 Step-by-Step Guide to Context API
+
+✅ Step 1: Create a New File
+
+📁 src/UserContext.jsx
+import { createContext, useState } from "react";
+
+// Create context
+export const UserContext = createContext();
+
+// Provider component
+export function UserProvider({ children }) {
+  const [user, setUser] = useState("Atik");
+
+  return (
+    <UserContext.Provider value={{ user, setUser }}>
+      {children}
+    </UserContext.Provider>
+  );
+}
