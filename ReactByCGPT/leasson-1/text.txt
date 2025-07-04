@@ -435,3 +435,21 @@ function Welcome() {
 }
 
 export default Welcome;
+
+📁 ChangeUser.jsx
+
+import { useContext } from "react";
+import { UserContext } from "./UserContext";
+
+function ChangeUser() {
+  const { setUser } = useContext(UserContext);
+
+  return (
+    <input
+      onChange={(e) => setUser(e.target.value)}
+      placeholder="Enter new name"
+    />
+  );
+}
+
+export default ChangeUser;
