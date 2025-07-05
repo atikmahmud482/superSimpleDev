@@ -466,3 +466,13 @@ function App() {
     </div>
   );
 }
+
+
+🎨 React + Tailwind CSS Setup (Vite)
+✅ Step 1: Install Tailwind
+In your React project folder, run:
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+This creates:
+tailwind.config.js
+postcss.config.js
