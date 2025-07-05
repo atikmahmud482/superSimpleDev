@@ -509,3 +509,21 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 );
+
+✅ Step 5: Try It Out
+📁 App.jsx
+function App() {
+  return (
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
+      <h1 className="text-4xl font-bold text-blue-600">Hello Tailwind + React 🚀</h1>
+      <p className="mt-2 text-gray-600">Styled with utility classes</p>
+    </div>
+  );
+}
+
+export default App;
+✅ Output:
+You’ll see a centered page with:
+Bold blue heading
+Light gray background
+Responsive layout
