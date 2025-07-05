@@ -496,3 +496,16 @@ export default {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+✅ Step 4: Import CSS in your App
+📁 main.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css'; // ← Import Tailwind here
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+);
