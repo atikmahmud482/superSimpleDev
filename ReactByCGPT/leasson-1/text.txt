@@ -490,3 +490,9 @@ export default {
   },
   plugins: [],
 };
+
+✅ Step 3: Add Tailwind Directives
+📁 src/index.css (create if not already)
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
