@@ -527,3 +527,10 @@ You’ll see a centered page with:
 Bold blue heading
 Light gray background
 Responsive layout
+
+🎯 Practice Task:
+Add a button with Tailwind classes:
+<button className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded">
+  Click Me
+</button>
+Try changing fonts, colors, spacing
