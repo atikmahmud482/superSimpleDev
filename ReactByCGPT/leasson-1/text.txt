@@ -543,3 +543,14 @@ With Tailwind CSS, useState, localStorage, and clean UI.
 ✅ Delete tasks
 ✅ Save tasks in localStorage (even after refresh)
 ✅ Tailwind styling
+
+✅ Step 1: Setup File
+📁 src/TodoApp.jsx
+import { useState, useEffect } from "react";
+
+function TodoApp() {
+  const [task, setTask] = useState("");
+  const [todos, setTodos] = useState(() => {
+    const saved = localStorage.getItem("myTodos");
+    return saved ? JSON.parse(saved) : [];
+  });
