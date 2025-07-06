@@ -534,3 +534,12 @@ Add a button with Tailwind classes:
   Click Me
 </button>
 Try changing fonts, colors, spacing
+
+✅ React Project: Todo App 📝
+With Tailwind CSS, useState, localStorage, and clean UI.
+
+🎯 Features:
+✅ Add tasks
+✅ Delete tasks
+✅ Save tasks in localStorage (even after refresh)
+✅ Tailwind styling
