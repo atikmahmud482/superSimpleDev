@@ -585,3 +585,18 @@ useEffect(() => {
           Add
         </button>
       </div>
+      <ul className="space-y-2">
+        {todos.map((todo, index) => (
+          <li key={index} className="flex justify-between items-center bg-gray-100 p-2 rounded">
+            <span>{todo}</span>
+            <button onClick={() => deleteTask(index)} className="text-red-500 font-bold">
+              ❌
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default TodoApp;
