@@ -554,3 +554,13 @@ function TodoApp() {
     const saved = localStorage.getItem("myTodos");
     return saved ? JSON.parse(saved) : [];
   });
+
+useEffect(() => {
+    localStorage.setItem("myTodos", JSON.stringify(todos));
+  }, [todos]);
+
+  const addTask = () => {
+    if (task.trim() === "") return;
+    setTodos([...todos, task]);
+    setTask("");
+  };
