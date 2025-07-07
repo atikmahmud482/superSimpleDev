@@ -615,3 +615,9 @@ Without refreshing the page 🚀
 ✅ Step 1: Install React Router
 In your terminal:
 npm install react-router-dom
+
+✅ Step 2: Create Some Pages
+function Home() {
+  return <h2 className="text-2xl">🏠 Home Page</h2>;
+}
+export default Home;
