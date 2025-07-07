@@ -628,3 +628,9 @@ function About() {
   return <h2 className="text-2xl">ℹ️ About Page</h2>;
 }
 export default About;
+
+📁 src/pages/Contact.jsx
+function Contact() {
+  return <h2 className="text-2xl">📞 Contact Page</h2>;
+}
+export default Contact;
