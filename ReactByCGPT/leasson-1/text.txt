@@ -610,3 +610,8 @@ You can switch between pages like:
 /blog
 /product/123
 Without refreshing the page 🚀
+
+🔧 Step-by-Step Setup
+✅ Step 1: Install React Router
+In your terminal:
+npm install react-router-dom
