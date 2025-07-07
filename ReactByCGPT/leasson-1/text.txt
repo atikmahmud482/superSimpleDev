@@ -600,3 +600,13 @@ useEffect(() => {
 }
 
 export default TodoApp;
+
+🧭 React Lesson 9: React Router — Multi-Page Navigation
+✅ What is React Router?
+React Router lets you build multi-page UIs in a single-page React app.
+You can switch between pages like:
+/home
+/about
+/blog
+/product/123
+Without refreshing the page 🚀
