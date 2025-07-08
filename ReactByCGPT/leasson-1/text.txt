@@ -661,3 +661,16 @@ function App() {
   );
 }
 export default App;
+
+🧱 Shopping Cart Project Structure
+/src
+ ┣ /pages
+ ┃ ┣ Home.jsx
+ ┃ ┗ Cart.jsx
+ ┣ /components
+ ┃ ┣ ProductCard.jsx
+ ┃ ┗ Navbar.jsx
+ ┣ /context
+ ┃ ┗ CartContext.jsx
+ ┣ App.jsx
+ ┗ main.jsx
