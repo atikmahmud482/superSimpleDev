@@ -738,3 +738,25 @@ function App() {
 }
 
 export default App;
+
+✅ Step 4: Create Sample Products Page
+📁 pages/Home.jsx
+import ProductCard from "../components/ProductCard";
+
+const products = [
+  { id: 1, name: "Laptop", price: 800, image: "https://via.placeholder.com/150" },
+  { id: 2, name: "Phone", price: 500, image: "https://via.placeholder.com/150" },
+  { id: 3, name: "Headphones", price: 100, image: "https://via.placeholder.com/150" },
+];
+
+function Home() {
+  return (
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 p-4">
+      {products.map((product) => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
+  );
+}
+
+export default Home;
