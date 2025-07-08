@@ -760,3 +760,26 @@ function Home() {
 }
 
 export default Home;
+
+📁 components/ProductCard.jsx
+import { useCart } from "../context/CartContext";
+
+function ProductCard({ product }) {
+  const { addToCart } = useCart();
+
+  return (
+    <div className="border p-4 shadow rounded">
+      <img src={product.image} alt={product.name} className="w-full" />
+      <h3 className="font-bold">{product.name}</h3>
+      <p>${product.price}</p>
+      <button
+        className="mt-2 bg-blue-600 text-white px-4 py-1 rounded"
+        onClick={() => addToCart(product)}
+      >
+        Add to Cart
+      </button>
+    </div>
+  );
+}
+
+export default ProductCard;
